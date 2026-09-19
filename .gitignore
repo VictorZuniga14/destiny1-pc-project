@@ -1,0 +1,39 @@
+# Build
+bin/
+build/
+dist/
+out/
+target/
+
+# Dependencies
+node_modules/
+vendor/
+
+# IDE
+.vscode/
+.idea/
+*.user
+*.suo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Captures / potentially sensitive research data
+captures/private/
+*.pcapng
+*.key
+*.secret
+
+# Temporary files
+tmp/
+temp/
