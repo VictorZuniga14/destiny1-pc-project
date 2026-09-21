@@ -1,0 +1,1542 @@
+{
+  "matrix_version": "1.0",
+  "entries": [
+    {
+      "id": "bap_framing",
+      "area": "BAP_FRAMING",
+      "name": "BAP framing [0x01][kind][body_len BE][body]",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "bap-session-verify",
+        "bap-stream-verify",
+        "framing tests"
+      ],
+      "dependencies": [],
+      "notes": [
+        "kind 1 = encrypted; kind 2 = clear",
+        "BapStreamDecoder implemented and capture-validated",
+        "Local compatibility is not real-client compatibility."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "tcp_stream",
+      "area": "TCP_STREAM",
+      "name": "TCP stream byte source + fragmentation",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "local_synthetic_tests",
+        "TcpByteSource",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "tcp_byte_source tests",
+        "local-server-e2e",
+        "bap-stream-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "TcpByteSource; fragmentation; multiple frames per read; EOF/incomplete",
+        "No external network connections",
+        "LOCAL_TCP does not imply REAL_SERVER."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "service_handshake_pair",
+      "area": "SERVICE_HANDSHAKE",
+      "name": "0x1E/0x1F service handshake",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "local-replay",
+        "stateful-server-verify",
+        "compatibility-client-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Observed + codec + stateful server + local replay verified",
+        "Real server compatibility NOT_PROVEN"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "session_login_pair",
+      "area": "SESSION_LOGIN",
+      "name": "0x19/0x1A session login",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "session-crypto-verify",
+        "local-replay",
+        "bap-session-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Session login structure observed; CBC/HMAC validated for existing captures",
+        "Record layout validated; full content semantics still limited",
+        "Capture validation is not server compatibility."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "session_crypto_context",
+      "area": "SESSION_CRYPTO",
+      "name": "SessionCryptoContext AES-GCM",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "gcm-sequence-verify",
+        "session_context tests",
+        "bap-session-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "AES-GCM; key 16; nonce 12",
+        "C2S base = session_nonce XOR last_byte(1); S2C = identity",
+        "Independent per-direction counters",
+        "Scope limited to available capture evidence — not universal Destiny rules"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "encrypted_handshake_pair",
+      "area": "ENCRYPTED_HANDSHAKE",
+      "name": "0x79/0x7A encrypted handshake",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "gcm-first-frame-verify",
+        "gcm-sequence-verify",
+        "local-replay"
+      ],
+      "dependencies": [],
+      "notes": [
+        "AES-GCM decrypt validated; AAD empty compatible with verified captures",
+        "Real-client compatibility NOT_PROVEN"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "nat_reporting_pair",
+      "area": "NAT_REPORTING",
+      "name": "0x12E/0x12F NAT reporting candidates",
+      "evidence": "OBSERVED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-correlation-verify",
+        "stateful-server-verify",
+        "message-codec-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Observed; structure/correlation available; dispatch implemented",
+        "Full semantics still limited — Observed does not mean understood."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "keepalive_pair",
+      "area": "KEEPALIVE",
+      "name": "0xFA/0xFB keepalive candidates",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "state-machine-verify",
+        "stateful-server-verify",
+        "observation-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Request/response candidate; local response policy; keepalive model",
+        "Universal timing NOT confirmed — temporal intervals observational only"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "message_codec_layer",
+      "area": "MESSAGE_CODEC",
+      "name": "Message codec + registry",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "message-codec-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Registry reuses EXPECTED_MESSAGE_IDS; opaque IDs preserve raw"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "message_dispatch_layer",
+      "area": "MESSAGE_DISPATCH",
+      "name": "Message dispatcher (observational)",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "local_synthetic_tests"
+      ],
+      "verification_refs": [
+        "message_dispatcher tests",
+        "stateful-server-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Does not invent handlers for unknown IDs"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "protocol_state_layer",
+      "area": "PROTOCOL_STATE",
+      "name": "ProtocolState + observational SM",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "state-machine-verify",
+        "stateful-server-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "M3.4 observational SM separate from M4.5 local ProtocolState",
+        "Implemented does not mean compatible."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "local_server_layer",
+      "area": "LOCAL_SERVER",
+      "name": "LocalBapServer + replay",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "local-server-verify",
+        "local-replay",
+        "local-server-e2e"
+      ],
+      "dependencies": [],
+      "notes": [
+        "SIMULATED_HANDSHAKE only; localhost",
+        "Synthetic tests do not prove Destiny client interoperability."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "compatibility_client_layer",
+      "area": "COMPATIBILITY_CLIENT",
+      "name": "BapCompatibilityClient",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "local_synthetic_tests"
+      ],
+      "verification_refs": [
+        "compatibility-client-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Localhost only; SYNTHETIC_TEST_ONLY crypto"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "external_boundary_layer",
+      "area": "EXTERNAL_CLIENT_BOUNDARY",
+      "name": "ExternalClientBoundary",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP",
+        "EXTERNAL_BOUNDARY"
+      ],
+      "evidence_refs": [
+        "local_synthetic_tests",
+        "external_boundary"
+      ],
+      "verification_refs": [
+        "external-boundary-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Localhost ingress only; safe events; reuses StatefulBapSession",
+        "Does not prove real Destiny client attachment"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "observation_harness_layer",
+      "area": "OBSERVATION_HARNESS",
+      "name": "Observation harness (M4.8)",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "SYNTHETIC_LOCAL",
+        "EXTERNAL_BOUNDARY"
+      ],
+      "evidence_refs": [
+        "observation_harness",
+        "local_synthetic_tests"
+      ],
+      "verification_refs": [
+        "observation-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Metadata-only traces; no auto-promotion of hypotheses"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "udp_transport_layer",
+      "area": "UDP_TRANSPORT",
+      "name": "UDP transport evidence",
+      "evidence": "OBSERVED",
+      "implementation": "NOT_IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "udp-evidence-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Ambient UDP observed in captures; session gameplay UDP not confirmed",
+        "Capture A had 3074/3075 traffic before session; Capture B showed no session UDP",
+        "Ports 3074/3075 are NOT asserted as Destiny gameplay transport",
+        "Unknown remains unknown until evidence changes it."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "gameplay_networking_layer",
+      "area": "GAMEPLAY_NETWORKING",
+      "name": "Gameplay networking / UDP gameplay",
+      "evidence": "UNKNOWN",
+      "implementation": "BLOCKED",
+      "verification": "BLOCKED",
+      "scopes": [
+        "OFFLINE_CAPTURE"
+      ],
+      "evidence_refs": [],
+      "verification_refs": [],
+      "dependencies": [],
+      "notes": [
+        "Gameplay UDP remains UNKNOWN/BLOCKED"
+      ],
+      "blocking_reason": "No confirmed session gameplay UDP protocol; no implementation without evidence",
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "signon_layer",
+      "area": "SIGNON",
+      "name": "SignOn HTTPS offline analysis + session material boundary",
+      "evidence": "CONFIRMED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "docs/networking/signon-https.md",
+        "capture:20260529-003132",
+        "signon-verify"
+      ],
+      "verification_refs": [
+        "signon-verify",
+        "signon tests"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Offline SignOn analysis VERIFIED; metadata-only; no secret values stored",
+        "SessionMaterialProvider boundary + OfflineSessionMaterialProvider (SYNTHETIC_TEST_ONLY)",
+        "Real SignOn / live auth remains NOT_IMPLEMENTED / BLOCKED",
+        "Offline SignOn analysis is not real SignOn compatibility."
+      ],
+      "blocking_reason": "Real SignOn HTTP/auth not implemented; live Bungie/Destiny connection forbidden",
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "signon_real_provider",
+      "area": "SIGNON",
+      "name": "Real SignOn provider / live authentication",
+      "evidence": "BLOCKED",
+      "implementation": "BLOCKED",
+      "verification": "BLOCKED",
+      "scopes": [
+        "REAL_SERVER"
+      ],
+      "evidence_refs": [],
+      "verification_refs": [],
+      "dependencies": [],
+      "notes": [
+        "No real SignOn implementation; no live auth; no credentials"
+      ],
+      "blocking_reason": "No real SignOn implementation or live Destiny/Bungie connection",
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "real_destiny_client",
+      "area": "REAL_DESTINY_CLIENT",
+      "name": "Real Destiny client compatibility",
+      "evidence": "UNKNOWN",
+      "implementation": "BLOCKED",
+      "verification": "NOT_VERIFIED",
+      "scopes": [
+        "REAL_CLIENT"
+      ],
+      "evidence_refs": [],
+      "verification_refs": [],
+      "dependencies": [],
+      "notes": [
+        "NOT_PROVEN — local/synthetic success is not real-client proof",
+        "Local compatibility is not real-client compatibility."
+      ],
+      "blocking_reason": "no real-client compatibility evidence",
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "real_destiny_server",
+      "area": "REAL_DESTINY_SERVER",
+      "name": "Real Destiny server compatibility",
+      "evidence": "UNKNOWN",
+      "implementation": "BLOCKED",
+      "verification": "NOT_VERIFIED",
+      "scopes": [
+        "REAL_SERVER"
+      ],
+      "evidence_refs": [],
+      "verification_refs": [],
+      "dependencies": [],
+      "notes": [
+        "NOT_PROVEN — local TCP is not real-server proof",
+        "Capture validation is not server compatibility."
+      ],
+      "blocking_reason": "no real-server compatibility evidence",
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": null
+    },
+    {
+      "id": "msg_0x000A",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x000A",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Inventory/registry presence; opaque or structural only",
+        "Semantics not invented — Observed does not mean understood."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 10
+    },
+    {
+      "id": "msg_0x000B",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x000B",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Inventory/registry presence; opaque or structural only",
+        "Semantics not invented — Observed does not mean understood."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 11
+    },
+    {
+      "id": "msg_0x000C",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x000C",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Inventory/registry presence; opaque or structural only",
+        "Semantics not invented — Observed does not mean understood."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 12
+    },
+    {
+      "id": "msg_0x000D",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x000D",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Inventory/registry presence; opaque or structural only",
+        "Semantics not invented — Observed does not mean understood."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 13
+    },
+    {
+      "id": "msg_0x0010",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x0010",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Present in inventory; opaque codec; semantics remain limited/unknown",
+        "Do not invent request/response/gameplay meaning"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 16
+    },
+    {
+      "id": "msg_0x0011",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x0011",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Present in inventory; opaque codec; semantics remain limited/unknown",
+        "Do not invent request/response/gameplay meaning"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 17
+    },
+    {
+      "id": "msg_0x0012",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x0012",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Inventory/registry presence; opaque or structural only",
+        "Semantics not invented — Observed does not mean understood."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 18
+    },
+    {
+      "id": "msg_0x0013",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x0013",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Inventory/registry presence; opaque or structural only",
+        "Semantics not invented — Observed does not mean understood."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 19
+    },
+    {
+      "id": "msg_0x0015",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x0015",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Inventory/registry presence; opaque or structural only",
+        "Semantics not invented — Observed does not mean understood."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 21
+    },
+    {
+      "id": "msg_0x0016",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x0016",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Inventory/registry presence; opaque or structural only",
+        "Semantics not invented — Observed does not mean understood."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 22
+    },
+    {
+      "id": "msg_0x0017",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x0017",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Inventory/registry presence; opaque or structural only",
+        "Semantics not invented — Observed does not mean understood."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 23
+    },
+    {
+      "id": "msg_0x0018",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x0018",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Inventory/registry presence; opaque or structural only",
+        "Semantics not invented — Observed does not mean understood."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 24
+    },
+    {
+      "id": "msg_0x0019",
+      "area": "SESSION_LOGIN",
+      "name": "Message 0x0019",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "session-crypto-verify",
+        "bap-session-verify",
+        "local-replay"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Structure observed; CBC/HMAC (0x1A path) capture-validated",
+        "Full payload semantics still limited"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 25
+    },
+    {
+      "id": "msg_0x001A",
+      "area": "SESSION_LOGIN",
+      "name": "Message 0x001A",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "session-crypto-verify",
+        "bap-session-verify",
+        "local-replay"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Structure observed; CBC/HMAC (0x1A path) capture-validated",
+        "Full payload semantics still limited"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 26
+    },
+    {
+      "id": "msg_0x001E",
+      "area": "SERVICE_HANDSHAKE",
+      "name": "Message 0x001E",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "local-replay",
+        "message-codec-verify",
+        "stateful-server-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Observed; codec implemented; stateful server; local replay verified",
+        "Real server compatibility NOT_PROVEN"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 30
+    },
+    {
+      "id": "msg_0x001F",
+      "area": "SERVICE_HANDSHAKE",
+      "name": "Message 0x001F",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "local-replay",
+        "message-codec-verify",
+        "stateful-server-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Observed; codec implemented; stateful server; local replay verified",
+        "Real server compatibility NOT_PROVEN"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 31
+    },
+    {
+      "id": "msg_0x0020",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x0020",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Inventory/registry presence; opaque or structural only",
+        "Semantics not invented — Observed does not mean understood."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 32
+    },
+    {
+      "id": "msg_0x0021",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x0021",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Inventory/registry presence; opaque or structural only",
+        "Semantics not invented — Observed does not mean understood."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 33
+    },
+    {
+      "id": "msg_0x002A",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x002A",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Present in inventory; opaque codec; semantics remain limited/unknown",
+        "Do not invent request/response/gameplay meaning"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 42
+    },
+    {
+      "id": "msg_0x002B",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x002B",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-inventory",
+        "message-codec-verify",
+        "multi-capture-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Present in inventory; opaque codec; semantics remain limited/unknown",
+        "Do not invent request/response/gameplay meaning"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 43
+    },
+    {
+      "id": "msg_0x0079",
+      "area": "ENCRYPTED_HANDSHAKE",
+      "name": "Message 0x0079",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "gcm-sequence-verify",
+        "gcm-first-frame-verify",
+        "local-replay"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Encrypted handshake; AES-GCM validated; AAD empty on verified captures",
+        "Real-client compatibility NOT_PROVEN"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 121
+    },
+    {
+      "id": "msg_0x007A",
+      "area": "ENCRYPTED_HANDSHAKE",
+      "name": "Message 0x007A",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "gcm-sequence-verify",
+        "gcm-first-frame-verify",
+        "local-replay"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Encrypted handshake; AES-GCM validated; AAD empty on verified captures",
+        "Real-client compatibility NOT_PROVEN"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 122
+    },
+    {
+      "id": "msg_0x007B",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x007B",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "payload-structure-verify",
+        "message-codec-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Variable-length payloads observed; semantics remain limited/unknown",
+        "Unknown remains unknown until evidence changes it."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 123
+    },
+    {
+      "id": "msg_0x00AB",
+      "area": "MESSAGE_CODEC",
+      "name": "Message 0x00AB",
+      "evidence": "OBSERVED",
+      "implementation": "PARTIAL",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "payload-structure-verify",
+        "message-codec-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Variable-length payloads observed; semantics remain limited/unknown",
+        "Unknown remains unknown until evidence changes it."
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 171
+    },
+    {
+      "id": "msg_0x00FA",
+      "area": "KEEPALIVE",
+      "name": "Message 0x00FA",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "state-machine-verify",
+        "stateful-server-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Keepalive candidate; local response policy",
+        "Universal timing NOT confirmed"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 250
+    },
+    {
+      "id": "msg_0x00FB",
+      "area": "KEEPALIVE",
+      "name": "Message 0x00FB",
+      "evidence": "CONFIRMED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100",
+        "local_synthetic_tests",
+        "local_replay"
+      ],
+      "verification_refs": [
+        "state-machine-verify",
+        "stateful-server-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Keepalive candidate; local response policy",
+        "Universal timing NOT confirmed"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 251
+    },
+    {
+      "id": "msg_0x012E",
+      "area": "NAT_REPORTING",
+      "name": "Message 0x012E",
+      "evidence": "OBSERVED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-correlation-verify",
+        "message-codec-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Observed; correlation/structure available; dispatch implemented",
+        "Complete semantics still limited"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 302
+    },
+    {
+      "id": "msg_0x012F",
+      "area": "NAT_REPORTING",
+      "name": "Message 0x012F",
+      "evidence": "OBSERVED",
+      "implementation": "IMPLEMENTED",
+      "verification": "VERIFIED",
+      "scopes": [
+        "OFFLINE_CAPTURE",
+        "SYNTHETIC_LOCAL",
+        "LOCAL_TCP"
+      ],
+      "evidence_refs": [
+        "capture:20260529-003132",
+        "capture:20260608-231100"
+      ],
+      "verification_refs": [
+        "message-correlation-verify",
+        "message-codec-verify"
+      ],
+      "dependencies": [],
+      "notes": [
+        "Observed; correlation/structure available; dispatch implemented",
+        "Complete semantics still limited"
+      ],
+      "blocking_reason": null,
+      "semantic_claim": null,
+      "real_client_compatibility": "NOT_PROVEN",
+      "real_server_compatibility": "NOT_PROVEN",
+      "message_id": 303
+    }
+  ],
+  "evidence_sources": [
+    "capture:20260529-003132",
+    "capture:20260608-231100",
+    "local_synthetic_tests",
+    "local_replay",
+    "external_boundary",
+    "observation_harness"
+  ],
+  "notes": [
+    "Local compatibility is not real-client compatibility.",
+    "Capture validation is not server compatibility.",
+    "Synthetic tests do not prove Destiny client interoperability.",
+    "Observed does not mean understood.",
+    "Implemented does not mean compatible.",
+    "Unknown remains unknown until evidence changes it."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "trace_version": "1",
+  "capture_id": "synthetic-boundary",
+  "notes": [
+    "Derived from boundary-safe metadata pattern"
+  ],
+  "events": [
+    {
+      "ConnectionStarted": {
+        "connection_id": 1
+      }
+    },
+    {
+      "FrameObserved": {
+        "frame": {
+          "connection_id": 1,
+          "frame_index": 0,
+          "direction": "C2S",
+          "kind": 2,
+          "body_len": 12,
+          "message_id": 30,
+          "protocol_state": "SERVICE_HANDSHAKE_COMPLETE"
+        }
+      }
+    },
+    {
+      "ConnectionClosed": {
+        "connection_id": 1,
+        "reason": "eof"
+      }
+    }
+  ]
+}

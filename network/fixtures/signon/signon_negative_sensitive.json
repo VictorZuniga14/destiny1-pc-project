@@ -1,0 +1,17 @@
+{
+  "description": "Fictional sensitive values must be rejected (not real secrets)",
+  "capture_id": "synthetic-negative",
+  "transport": "HTTPS",
+  "request_observed": true,
+  "response_observed": true,
+  "status_code": 200,
+  "field_names": ["token"],
+  "field_lengths": {},
+  "field_classifications": {},
+  "fields": [],
+  "evidence_source": "negative-test",
+  "classification": "OBSERVED",
+  "session_key": "00ff00ff00ff00ff00ff00ff00ff00ff",
+  "token": "fake-token-not-real",
+  "password": "not-a-real-password"
+}

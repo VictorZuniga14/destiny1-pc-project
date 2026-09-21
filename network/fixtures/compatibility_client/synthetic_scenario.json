@@ -1,0 +1,23 @@
+{
+  "name": "compatibility_client_synthetic_scenario",
+  "notes": [
+    "Safe metadata only — no keys, tokens, or raw secret payloads.",
+    "SYNTHETIC_TEST_ONLY crypto material lives in test_crypto_material.rs.",
+    "Local client/server compatibility harness — NOT Destiny 1 client."
+  ],
+  "expected_result": "COMPATIBILITY_SCENARIO: PASS",
+  "steps": [
+    { "event": "CONNECT", "expected_state": "CONNECTED" },
+    { "event": "C2S", "message_id": "0x1E", "expected_state": "SERVICE_HANDSHAKE_SENT" },
+    { "event": "S2C", "message_id": "0x1F", "expected_state": "SERVICE_HANDSHAKE_COMPLETE" },
+    { "event": "C2S", "message_id": "0x19", "expected_state": "SESSION_LOGIN_SENT" },
+    { "event": "S2C", "message_id": "0x1A", "expected_state": "SESSION_ESTABLISHED" },
+    { "event": "C2S", "message_id": "0x79", "expected_state": "ENCRYPTED_HANDSHAKE_SENT" },
+    { "event": "S2C", "message_id": "0x7A", "expected_state": "ACTIVE" },
+    { "event": "C2S", "message_id": "0x12E", "expected_state": "ACTIVE" },
+    { "event": "C2S", "message_id": "0xFA", "expected_state": "ACTIVE" },
+    { "event": "S2C", "message_id": "0xFB", "expected_state": "ACTIVE" },
+    { "event": "C2S", "message_id": "0xAB", "expected_state": "ACTIVE" },
+    { "event": "CLOSE", "expected_state": "CLOSED" }
+  ]
+}

@@ -1,0 +1,4667 @@
+{
+  "capture_a": "20260529-003132",
+  "capture_b": "20260608-231100",
+  "message_counts": {
+    "20260529-003132": 128,
+    "20260608-231100": 126
+  },
+  "unique_message_ids": [
+    "0x0A",
+    "0x0B",
+    "0x0C",
+    "0x0D",
+    "0x10",
+    "0x11",
+    "0x12",
+    "0x13",
+    "0x15",
+    "0x16",
+    "0x17",
+    "0x18",
+    "0x19",
+    "0x1A",
+    "0x1E",
+    "0x1F",
+    "0x20",
+    "0x21",
+    "0x2A",
+    "0x2B",
+    "0x79",
+    "0x7A",
+    "0x7B",
+    "0xAB",
+    "0xFA",
+    "0xFB",
+    "0x12E",
+    "0x12F"
+  ],
+  "sequence_lengths": {
+    "20260529-003132": 128,
+    "20260608-231100": 126
+  },
+  "ngrams": [
+    {
+      "n": 4,
+      "sequence": "0xFA→0xFB→0xFA→0xFB",
+      "occurrences": 28,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0xFB→0xFA→0xFB→0xFA",
+      "occurrences": 19,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0A→0x7B→0x7B→0x0B",
+      "occurrences": 10,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x0B→0xFA→0xFB",
+      "occurrences": 8,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0xFA→0xFB→0x0A→0x7B",
+      "occurrences": 8,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0xFA→0xFB→0xFA",
+      "occurrences": 7,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x7B→0x0B→0xFA",
+      "occurrences": 6,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0xFB→0xFA→0xFB→0x0A",
+      "occurrences": 5,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x0A→0x7B→0x7B",
+      "occurrences": 4,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0xFB→0x0A→0x7B→0x0B",
+      "occurrences": 4,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0xFB→0x0A→0x7B→0x7B",
+      "occurrences": 4,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0A→0x12→0x21→0x7B",
+      "occurrences": 3,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0x20→0x0A→0x12",
+      "occurrences": 3,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x20→0x0A→0x12→0x21",
+      "occurrences": 3,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x0B→0x20→0x0A",
+      "occurrences": 3,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x7B→0x0B→0x20",
+      "occurrences": 3,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0xFA→0xFB→0x2A→0x2B",
+      "occurrences": 3,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0A→0x0B→0x0A→0x0B",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0A→0x0B→0x0C→0x0D",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0A→0x7B→0x0B→0x0A",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0A→0x7B→0x0B→0xFA",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0x0A→0x0B→0x0C",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0x0C→0x0D→0x7B",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0x13→0xFA→0xFB",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0C→0x0C→0x0D→0x0D",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0C→0x0D→0x0D→0x7B",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0C→0x0D→0x7B→0x20",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0D→0x0D→0x7B→0x7B",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0D→0x7B→0x20→0x21",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0D→0x7B→0x7B→0x0A",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x12E→0x12F→0x0A→0x0B",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x12F→0x0A→0x0B→0x0A",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x12→0x21→0x7B→0x0B",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x13→0xFA→0xFB→0xFA",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x15→0x16→0xFA→0xFB",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x16→0xFA→0xFB→0x0A",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x19→0x1A→0x79→0x7A",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x1A→0x79→0x7A→0x12E",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x1E→0x1F→0x19→0x1A",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x1F→0x19→0x1A→0x79",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x20→0x21→0x15→0x16",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x21→0x15→0x16→0xFA",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x21→0x7B→0x0B→0x13",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x2A→0x2B→0x2A→0x2B",
+      "occurrences": 2,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x2A→0x2B→0x7B→0x0A",
+      "occurrences": 2,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x2B→0x7B→0x0A→0x7B",
+      "occurrences": 2,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x79→0x7A→0x12E→0x12F",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7A→0x12E→0x12F→0x0A",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x0B→0x13→0xFA",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x20→0x21→0x15",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x7B→0x0A→0x7B",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 4,
+      "sequence": "0xFB→0xFA→0xFB→0x2A",
+      "occurrences": 2,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0A→0x0A→0xAB→0x7B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0A→0x0B→0xAB→0x2A",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0A→0x7B→0x0B→0x0C",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0A→0xAB→0x0B→0x17",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0A→0xAB→0x7B→0x0B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0x0A→0x0A→0xAB",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0x0A→0xAB→0x0B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0x0B→0x17→0x18",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0x0C→0x0C→0x0D",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0x13→0x0A→0x7B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0x17→0x18→0x0A",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0x17→0x18→0x0C",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0x2A→0x2B→0xFA",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0xAB→0x2A→0x2B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x0B→0xFA→0xFB→0xAB",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x10→0x11→0x7B→0x7B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x11→0x7B→0x7B→0x7B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x12→0x13→0x2A→0x2B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x12→0x21→0x7B→0x7B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x13→0x0A→0x7B→0x7B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x13→0x2A→0x2B→0x2A",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x17→0x18→0x0A→0x7B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x17→0x18→0x0C→0x0C",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x18→0x0A→0x7B→0x0B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x18→0x0C→0x0C→0x0D",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x21→0x7B→0x7B→0x0B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x2A→0x2B→0x0A→0x0B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x2A→0x2B→0x0A→0x7B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x2A→0x2B→0x10→0x11",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x2A→0x2B→0xFA→0xFB",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x2B→0x0A→0x0B→0xAB",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x2B→0x0A→0x7B→0x7B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x2B→0x10→0x11→0x7B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x2B→0x2A→0x2B→0x0A",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x2B→0x2A→0x2B→0x2A",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x2B→0xFA→0xFB→0x2A",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x0B→0x0A→0x0A",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x0B→0x0A→0xAB",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x0B→0x0B→0x17",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x0B→0x0C→0x0C",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x0B→0x13→0x0A",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x0B→0x2A→0x2B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x7B→0x0B→0x13",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x7B→0x0B→0x2A",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x7B→0x7B→0x7B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x7B→0x7B→0xFA",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0x7B→0xFA→0xFB",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0x7B→0xFA→0xFB→0x0A",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0xAB→0x0B→0x17→0x18",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0xAB→0x2A→0x2B→0x7B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0xAB→0x7B→0x0B→0x0B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0xFA→0xFB→0x12→0x13",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0xFB→0x12→0x13→0x2A",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0xFB→0x2A→0x2B→0x0A",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0xFB→0x2A→0x2B→0x10",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0xFB→0x2A→0x2B→0x7B",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 4,
+      "sequence": "0xFB→0xFA→0xFB→0x12",
+      "occurrences": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 3,
+      "sequence": "0xFA→0xFB→0xFA",
+      "occurrences": 28,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0xFB→0xFA→0xFB",
+      "occurrences": 28,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0x7B→0x7B→0x0B",
+      "occurrences": 11,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0x0A→0x7B→0x7B",
+      "occurrences": 10,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0x0B→0xFA→0xFB",
+      "occurrences": 8,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0x7B→0x0B→0xFA",
+      "occurrences": 8,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0xFA→0xFB→0x0A",
+      "occurrences": 8,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0xFB→0x0A→0x7B",
+      "occurrences": 8,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0x0A→0x7B→0x0B",
+      "occurrences": 5,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0x7B→0x0A→0x7B",
+      "occurrences": 4,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0x0A→0x12→0x21",
+      "occurrences": 3,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0x0B→0x20→0x0A",
+      "occurrences": 3,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0x12→0x21→0x7B",
+      "occurrences": 3,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0x20→0x0A→0x12",
+      "occurrences": 3,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0x7B→0x0B→0x13",
+      "occurrences": 3,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0x7B→0x0B→0x20",
+      "occurrences": 3,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    },
+    {
+      "n": 3,
+      "sequence": "0xFA→0xFB→0x2A",
+      "occurrences": 3,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 3,
+      "sequence": "0xFB→0x2A→0x2B",
+      "occurrences": 3,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC"
+    },
+    {
+      "n": 3,
+      "sequence": "0x0A→0x0B→0x0A",
+      "occurrences": 2,
+      "captures": 2,
+      "classification": "STABLE_SEQUENCE"
+    }
+  ],
+  "stable_sequences": [
+    {
+      "sequence": "0x0A→0x0B→0x0A→0x0B",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x0A→0x0B→0x0C→0x0D",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x0A→0x12→0x21→0x7B",
+      "occurrences_a": 1,
+      "occurrences_b": 2,
+      "length": 4
+    },
+    {
+      "sequence": "0x0A→0x7B→0x0B→0x0A",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x0A→0x7B→0x0B→0xFA",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x0A→0x7B→0x7B→0x0B",
+      "occurrences_a": 5,
+      "occurrences_b": 5,
+      "length": 4
+    },
+    {
+      "sequence": "0x0B→0x0A→0x0B→0x0C",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x0B→0x0C→0x0D→0x7B",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x0B→0x13→0xFA→0xFB",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x0B→0x20→0x0A→0x12",
+      "occurrences_a": 1,
+      "occurrences_b": 2,
+      "length": 4
+    },
+    {
+      "sequence": "0x0B→0xFA→0xFB→0xFA",
+      "occurrences_a": 5,
+      "occurrences_b": 2,
+      "length": 4
+    },
+    {
+      "sequence": "0x0C→0x0C→0x0D→0x0D",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x0C→0x0D→0x0D→0x7B",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x0C→0x0D→0x7B→0x20",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x0D→0x0D→0x7B→0x7B",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x0D→0x7B→0x20→0x21",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x0D→0x7B→0x7B→0x0A",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x12E→0x12F→0x0A→0x0B",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x12F→0x0A→0x0B→0x0A",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x12→0x21→0x7B→0x0B",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x13→0xFA→0xFB→0xFA",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x15→0x16→0xFA→0xFB",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x16→0xFA→0xFB→0x0A",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x19→0x1A→0x79→0x7A",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x1A→0x79→0x7A→0x12E",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x1E→0x1F→0x19→0x1A",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x1F→0x19→0x1A→0x79",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x20→0x0A→0x12→0x21",
+      "occurrences_a": 1,
+      "occurrences_b": 2,
+      "length": 4
+    },
+    {
+      "sequence": "0x20→0x21→0x15→0x16",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x21→0x15→0x16→0xFA",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x21→0x7B→0x0B→0x13",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x79→0x7A→0x12E→0x12F",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x7A→0x12E→0x12F→0x0A",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x7B→0x0A→0x7B→0x7B",
+      "occurrences_a": 1,
+      "occurrences_b": 3,
+      "length": 4
+    },
+    {
+      "sequence": "0x7B→0x0B→0x13→0xFA",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x7B→0x0B→0x20→0x0A",
+      "occurrences_a": 1,
+      "occurrences_b": 2,
+      "length": 4
+    },
+    {
+      "sequence": "0x7B→0x0B→0xFA→0xFB",
+      "occurrences_a": 5,
+      "occurrences_b": 3,
+      "length": 4
+    },
+    {
+      "sequence": "0x7B→0x20→0x21→0x15",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x7B→0x7B→0x0A→0x7B",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x7B→0x7B→0x0B→0x20",
+      "occurrences_a": 1,
+      "occurrences_b": 2,
+      "length": 4
+    },
+    {
+      "sequence": "0x7B→0x7B→0x0B→0xFA",
+      "occurrences_a": 4,
+      "occurrences_b": 2,
+      "length": 4
+    },
+    {
+      "sequence": "0xFA→0xFB→0x0A→0x7B",
+      "occurrences_a": 6,
+      "occurrences_b": 2,
+      "length": 4
+    },
+    {
+      "sequence": "0xFA→0xFB→0xFA→0xFB",
+      "occurrences_a": 24,
+      "occurrences_b": 4,
+      "length": 4
+    },
+    {
+      "sequence": "0xFB→0x0A→0x7B→0x0B",
+      "occurrences_a": 2,
+      "occurrences_b": 2,
+      "length": 4
+    },
+    {
+      "sequence": "0xFB→0xFA→0xFB→0xFA",
+      "occurrences_a": 18,
+      "occurrences_b": 1,
+      "length": 4
+    },
+    {
+      "sequence": "0x0A→0x0B→0x0A",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    },
+    {
+      "sequence": "0x0A→0x0B→0x0C",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    },
+    {
+      "sequence": "0x0A→0x12→0x21",
+      "occurrences_a": 1,
+      "occurrences_b": 2,
+      "length": 3
+    },
+    {
+      "sequence": "0x0A→0x7B→0x0B",
+      "occurrences_a": 2,
+      "occurrences_b": 3,
+      "length": 3
+    },
+    {
+      "sequence": "0x0A→0x7B→0x7B",
+      "occurrences_a": 5,
+      "occurrences_b": 5,
+      "length": 3
+    },
+    {
+      "sequence": "0x0B→0x0A→0x0B",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    },
+    {
+      "sequence": "0x0B→0x0C→0x0D",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    },
+    {
+      "sequence": "0x0B→0x13→0xFA",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    },
+    {
+      "sequence": "0x0B→0x17→0x18",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    },
+    {
+      "sequence": "0x0B→0x20→0x0A",
+      "occurrences_a": 1,
+      "occurrences_b": 2,
+      "length": 3
+    },
+    {
+      "sequence": "0x0B→0xFA→0xFB",
+      "occurrences_a": 5,
+      "occurrences_b": 3,
+      "length": 3
+    },
+    {
+      "sequence": "0x0C→0x0C→0x0D",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    },
+    {
+      "sequence": "0x0C→0x0D→0x0D",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    },
+    {
+      "sequence": "0x0C→0x0D→0x7B",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    },
+    {
+      "sequence": "0x0D→0x0D→0x7B",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    },
+    {
+      "sequence": "0x0D→0x7B→0x20",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    },
+    {
+      "sequence": "0x0D→0x7B→0x7B",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    },
+    {
+      "sequence": "0x12E→0x12F→0x0A",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    },
+    {
+      "sequence": "0x12F→0x0A→0x0B",
+      "occurrences_a": 1,
+      "occurrences_b": 1,
+      "length": 3
+    }
+  ],
+  "transition_edges": [
+    {
+      "edge": "0xFA→0xFB",
+      "count": 42,
+      "captures": 2,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0xFB→0xFA",
+      "count": 28,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 2.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x7B→0x0B",
+      "count": 19,
+      "captures": 2,
+      "direction_transition": "S2C→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x7B→0x7B",
+      "count": 16,
+      "captures": 2,
+      "direction_transition": "S2C→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0A→0x7B",
+      "count": 15,
+      "captures": 2,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 3.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0B→0xFA",
+      "count": 8,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 3.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x2A→0x2B",
+      "count": 8,
+      "captures": 1,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0xFB→0x0A",
+      "count": 8,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 2.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0A→0x0B",
+      "count": 5,
+      "captures": 2,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0B→0x0A",
+      "count": 4,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 6.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0C→0x0D",
+      "count": 4,
+      "captures": 2,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0D→0x7B",
+      "count": 4,
+      "captures": 2,
+      "direction_transition": "S2C→S2C",
+      "median_delta": 2.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x7B→0x0A",
+      "count": 4,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 4.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0A→0x12",
+      "count": 3,
+      "captures": 2,
+      "direction_transition": "C2S→C2S",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0B→0x0C",
+      "count": 3,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 5.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0B→0x13",
+      "count": 3,
+      "captures": 2,
+      "direction_transition": "S2C→S2C",
+      "median_delta": 2.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0B→0x20",
+      "count": 3,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 3.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x12→0x21",
+      "count": 3,
+      "captures": 2,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x20→0x0A",
+      "count": 3,
+      "captures": 2,
+      "direction_transition": "C2S→C2S",
+      "median_delta": 0.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x21→0x7B",
+      "count": 3,
+      "captures": 2,
+      "direction_transition": "S2C→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0xFB→0x2A",
+      "count": 3,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 9.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x0A→0xAB",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "C2S→C2S",
+      "median_delta": 0.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0B→0x17",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 2.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0C→0x0C",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "C2S→C2S",
+      "median_delta": 0.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0D→0x0D",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "S2C→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x13→0xFA",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 3.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x15→0x16",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x16→0xFA",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 2.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x17→0x18",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x19→0x1A",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x1A→0x79",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x1E→0x1F",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x1F→0x19",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x20→0x21",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x21→0x15",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x2B→0x0A",
+      "count": 2,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 1.5,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x2B→0x2A",
+      "count": 2,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 1.5,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x2B→0x7B",
+      "count": 2,
+      "captures": 1,
+      "direction_transition": "S2C→S2C",
+      "median_delta": 10.5,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x79→0x7A",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x7A→0x12E",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x7B→0x20",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 20.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x12E→0x12F",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x12F→0x0A",
+      "count": 2,
+      "captures": 2,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 3.0,
+      "edge_class": "STABLE_EDGE"
+    },
+    {
+      "edge": "0x0A→0x0A",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "C2S→C2S",
+      "median_delta": 2.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x0B→0x0B",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "S2C→S2C",
+      "median_delta": 2.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x0B→0x2A",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 2.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x0B→0xAB",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 1.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x10→0x11",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x11→0x7B",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "S2C→S2C",
+      "median_delta": 50.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x12→0x13",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x13→0x0A",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 2.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x13→0x2A",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 1.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x18→0x0A",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 4.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x18→0x0C",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 1.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x2B→0x10",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 4.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x2B→0xFA",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 2.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0x7B→0xFA",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 8.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0xAB→0x0B",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 1.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0xAB→0x2A",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "C2S→C2S",
+      "median_delta": 12.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0xAB→0x7B",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "C2S→S2C",
+      "median_delta": 2.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0xFB→0x12",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 2.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    },
+    {
+      "edge": "0xFB→0xAB",
+      "count": 1,
+      "captures": 1,
+      "direction_transition": "S2C→C2S",
+      "median_delta": 2.0,
+      "edge_class": "CAPTURE_SPECIFIC_EDGE"
+    }
+  ],
+  "stable_edges": [
+    "0xFA→0xFB",
+    "0xFB→0xFA",
+    "0x7B→0x0B",
+    "0x7B→0x7B",
+    "0x0A→0x7B",
+    "0x0B→0xFA",
+    "0xFB→0x0A",
+    "0x0A→0x0B",
+    "0x0B→0x0A",
+    "0x0C→0x0D",
+    "0x0D→0x7B",
+    "0x7B→0x0A",
+    "0x0A→0x12",
+    "0x0B→0x0C",
+    "0x0B→0x13",
+    "0x0B→0x20",
+    "0x12→0x21",
+    "0x20→0x0A",
+    "0x21→0x7B",
+    "0x0A→0xAB",
+    "0x0B→0x17",
+    "0x0C→0x0C",
+    "0x0D→0x0D",
+    "0x13→0xFA",
+    "0x15→0x16",
+    "0x16→0xFA",
+    "0x17→0x18",
+    "0x19→0x1A",
+    "0x1A→0x79",
+    "0x1E→0x1F",
+    "0x1F→0x19",
+    "0x20→0x21",
+    "0x21→0x15",
+    "0x79→0x7A",
+    "0x7A→0x12E",
+    "0x7B→0x20",
+    "0x12E→0x12F",
+    "0x12F→0x0A"
+  ],
+  "capture_specific_edges": [
+    "0x2A→0x2B",
+    "0xFB→0x2A",
+    "0x2B→0x0A",
+    "0x2B→0x2A",
+    "0x2B→0x7B",
+    "0x0A→0x0A",
+    "0x0B→0x0B",
+    "0x0B→0x2A",
+    "0x0B→0xAB",
+    "0x10→0x11",
+    "0x11→0x7B",
+    "0x12→0x13",
+    "0x13→0x0A",
+    "0x13→0x2A",
+    "0x18→0x0A",
+    "0x18→0x0C",
+    "0x2B→0x10",
+    "0x2B→0xFA",
+    "0x7B→0xFA",
+    "0xAB→0x0B",
+    "0xAB→0x2A",
+    "0xAB→0x7B",
+    "0xFB→0x12",
+    "0xFB→0xAB"
+  ],
+  "divergent_edges": [],
+  "timing_statistics": {
+    "0x0A→0x0A": {
+      "sample_count": 1,
+      "min": 2,
+      "max": 2,
+      "mean": 2.0,
+      "median": 2.0,
+      "unit": "frame_order"
+    },
+    "0x0A→0x0B": {
+      "sample_count": 5,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x0A→0x12": {
+      "sample_count": 3,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x0A→0x7B": {
+      "sample_count": 15,
+      "min": 1,
+      "max": 3,
+      "mean": 2.2,
+      "median": 3.0,
+      "unit": "frame_order"
+    },
+    "0x0A→0xAB": {
+      "sample_count": 2,
+      "min": 0,
+      "max": 0,
+      "mean": 0.0,
+      "median": 0.0,
+      "unit": "frame_order"
+    },
+    "0x0B→0x0A": {
+      "sample_count": 4,
+      "min": 1,
+      "max": 11,
+      "mean": 6.0,
+      "median": 6.0,
+      "unit": "frame_order"
+    },
+    "0x0B→0x0B": {
+      "sample_count": 1,
+      "min": 2,
+      "max": 2,
+      "mean": 2.0,
+      "median": 2.0,
+      "unit": "frame_order"
+    },
+    "0x0B→0x0C": {
+      "sample_count": 3,
+      "min": 2,
+      "max": 5,
+      "mean": 4.0,
+      "median": 5.0,
+      "unit": "frame_order"
+    },
+    "0x0B→0x13": {
+      "sample_count": 3,
+      "min": 2,
+      "max": 2,
+      "mean": 2.0,
+      "median": 2.0,
+      "unit": "frame_order"
+    },
+    "0x0B→0x17": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 3,
+      "mean": 2.0,
+      "median": 2.0,
+      "unit": "frame_order"
+    },
+    "0x0B→0x20": {
+      "sample_count": 3,
+      "min": 3,
+      "max": 3,
+      "mean": 3.0,
+      "median": 3.0,
+      "unit": "frame_order"
+    },
+    "0x0B→0x2A": {
+      "sample_count": 1,
+      "min": 2,
+      "max": 2,
+      "mean": 2.0,
+      "median": 2.0,
+      "unit": "frame_order"
+    },
+    "0x0B→0xAB": {
+      "sample_count": 1,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x0B→0xFA": {
+      "sample_count": 8,
+      "min": 2,
+      "max": 23,
+      "mean": 7.875,
+      "median": 3.0,
+      "unit": "frame_order"
+    },
+    "0x0C→0x0C": {
+      "sample_count": 2,
+      "min": 0,
+      "max": 0,
+      "mean": 0.0,
+      "median": 0.0,
+      "unit": "frame_order"
+    },
+    "0x0C→0x0D": {
+      "sample_count": 4,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x0D→0x0D": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x0D→0x7B": {
+      "sample_count": 4,
+      "min": 2,
+      "max": 2,
+      "mean": 2.0,
+      "median": 2.0,
+      "unit": "frame_order"
+    },
+    "0x10→0x11": {
+      "sample_count": 1,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x11→0x7B": {
+      "sample_count": 1,
+      "min": 50,
+      "max": 50,
+      "mean": 50.0,
+      "median": 50.0,
+      "unit": "frame_order"
+    },
+    "0x12E→0x12F": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x12F→0x0A": {
+      "sample_count": 2,
+      "min": 2,
+      "max": 4,
+      "mean": 3.0,
+      "median": 3.0,
+      "unit": "frame_order"
+    },
+    "0x12→0x13": {
+      "sample_count": 1,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x12→0x21": {
+      "sample_count": 3,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x13→0x0A": {
+      "sample_count": 1,
+      "min": 2,
+      "max": 2,
+      "mean": 2.0,
+      "median": 2.0,
+      "unit": "frame_order"
+    },
+    "0x13→0x2A": {
+      "sample_count": 1,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x13→0xFA": {
+      "sample_count": 2,
+      "min": 2,
+      "max": 4,
+      "mean": 3.0,
+      "median": 3.0,
+      "unit": "frame_order"
+    },
+    "0x15→0x16": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x16→0xFA": {
+      "sample_count": 2,
+      "min": 2,
+      "max": 2,
+      "mean": 2.0,
+      "median": 2.0,
+      "unit": "frame_order"
+    },
+    "0x17→0x18": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x18→0x0A": {
+      "sample_count": 1,
+      "min": 4,
+      "max": 4,
+      "mean": 4.0,
+      "median": 4.0,
+      "unit": "frame_order"
+    },
+    "0x18→0x0C": {
+      "sample_count": 1,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x19→0x1A": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x1A→0x79": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x1E→0x1F": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x1F→0x19": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x20→0x0A": {
+      "sample_count": 3,
+      "min": 0,
+      "max": 0,
+      "mean": 0.0,
+      "median": 0.0,
+      "unit": "frame_order"
+    },
+    "0x20→0x21": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x21→0x15": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x21→0x7B": {
+      "sample_count": 3,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x2A→0x2B": {
+      "sample_count": 8,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x2B→0x0A": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 2,
+      "mean": 1.5,
+      "median": 1.5,
+      "unit": "frame_order"
+    },
+    "0x2B→0x10": {
+      "sample_count": 1,
+      "min": 4,
+      "max": 4,
+      "mean": 4.0,
+      "median": 4.0,
+      "unit": "frame_order"
+    },
+    "0x2B→0x2A": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 2,
+      "mean": 1.5,
+      "median": 1.5,
+      "unit": "frame_order"
+    },
+    "0x2B→0x7B": {
+      "sample_count": 2,
+      "min": 8,
+      "max": 13,
+      "mean": 10.5,
+      "median": 10.5,
+      "unit": "frame_order"
+    },
+    "0x2B→0xFA": {
+      "sample_count": 1,
+      "min": 2,
+      "max": 2,
+      "mean": 2.0,
+      "median": 2.0,
+      "unit": "frame_order"
+    },
+    "0x79→0x7A": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x7A→0x12E": {
+      "sample_count": 2,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x7B→0x0A": {
+      "sample_count": 4,
+      "min": 1,
+      "max": 4,
+      "mean": 3.25,
+      "median": 4.0,
+      "unit": "frame_order"
+    },
+    "0x7B→0x0B": {
+      "sample_count": 19,
+      "min": 1,
+      "max": 17,
+      "mean": 2.789473684210526,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x7B→0x20": {
+      "sample_count": 2,
+      "min": 20,
+      "max": 20,
+      "mean": 20.0,
+      "median": 20.0,
+      "unit": "frame_order"
+    },
+    "0x7B→0x7B": {
+      "sample_count": 16,
+      "min": 1,
+      "max": 3,
+      "mean": 1.1875,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0x7B→0xFA": {
+      "sample_count": 1,
+      "min": 8,
+      "max": 8,
+      "mean": 8.0,
+      "median": 8.0,
+      "unit": "frame_order"
+    },
+    "0xAB→0x0B": {
+      "sample_count": 1,
+      "min": 1,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0xAB→0x2A": {
+      "sample_count": 1,
+      "min": 12,
+      "max": 12,
+      "mean": 12.0,
+      "median": 12.0,
+      "unit": "frame_order"
+    },
+    "0xAB→0x7B": {
+      "sample_count": 1,
+      "min": 2,
+      "max": 2,
+      "mean": 2.0,
+      "median": 2.0,
+      "unit": "frame_order"
+    },
+    "0xFA→0xFB": {
+      "sample_count": 42,
+      "min": 1,
+      "max": 2,
+      "mean": 1.0238095238095237,
+      "median": 1.0,
+      "unit": "frame_order"
+    },
+    "0xFB→0x0A": {
+      "sample_count": 8,
+      "min": 2,
+      "max": 13,
+      "mean": 3.5,
+      "median": 2.0,
+      "unit": "frame_order"
+    },
+    "0xFB→0x12": {
+      "sample_count": 1,
+      "min": 2,
+      "max": 2,
+      "mean": 2.0,
+      "median": 2.0,
+      "unit": "frame_order"
+    },
+    "0xFB→0x2A": {
+      "sample_count": 3,
+      "min": 1,
+      "max": 12,
+      "mean": 7.333333333333333,
+      "median": 9.0,
+      "unit": "frame_order"
+    },
+    "0xFB→0xAB": {
+      "sample_count": 1,
+      "min": 2,
+      "max": 2,
+      "mean": 2.0,
+      "median": 2.0,
+      "unit": "frame_order"
+    },
+    "0xFB→0xFA": {
+      "sample_count": 28,
+      "min": 2,
+      "max": 32,
+      "mean": 5.25,
+      "median": 2.0,
+      "unit": "frame_order"
+    }
+  },
+  "context_transitions": [
+    {
+      "context_before": 0,
+      "message_id": "0x19",
+      "context_after": 1,
+      "count": 2
+    },
+    {
+      "context_before": 1,
+      "message_id": "0x20",
+      "context_after": 7,
+      "count": 2
+    },
+    {
+      "context_before": 1,
+      "message_id": "0x79",
+      "context_after": 2,
+      "count": 2
+    },
+    {
+      "context_before": 2,
+      "message_id": "0x0B",
+      "context_after": 10,
+      "count": 2
+    },
+    {
+      "context_before": 2,
+      "message_id": "0x12E",
+      "context_after": 3,
+      "count": 2
+    },
+    {
+      "context_before": 3,
+      "message_id": "0x0A",
+      "context_after": 4,
+      "count": 2
+    },
+    {
+      "context_before": 4,
+      "message_id": "0x0A",
+      "context_after": 5,
+      "count": 2
+    },
+    {
+      "context_before": 4,
+      "message_id": "0x7B",
+      "context_after": 5,
+      "count": 2
+    },
+    {
+      "context_before": 5,
+      "message_id": "0x0A",
+      "context_after": 17,
+      "count": 2
+    },
+    {
+      "context_before": 5,
+      "message_id": "0x0C",
+      "context_after": 6,
+      "count": 2
+    },
+    {
+      "context_before": 6,
+      "message_id": "0x7B",
+      "context_after": 1,
+      "count": 2
+    },
+    {
+      "context_before": 6,
+      "message_id": "0x7B",
+      "context_after": 7,
+      "count": 2
+    },
+    {
+      "context_before": 7,
+      "message_id": "0x0B",
+      "context_after": 17,
+      "count": 2
+    },
+    {
+      "context_before": 7,
+      "message_id": "0x15",
+      "context_after": 8,
+      "count": 2
+    },
+    {
+      "context_before": 8,
+      "message_id": "0x0B",
+      "context_after": 19,
+      "count": 2
+    },
+    {
+      "context_before": 8,
+      "message_id": "0xFA",
+      "context_after": 9,
+      "count": 2
+    },
+    {
+      "context_before": 9,
+      "message_id": "0x0A",
+      "context_after": 10,
+      "count": 2
+    },
+    {
+      "context_before": 10,
+      "message_id": "0x0A",
+      "context_after": 11,
+      "count": 2
+    },
+    {
+      "context_before": 10,
+      "message_id": "0x7B",
+      "context_after": 2,
+      "count": 2
+    },
+    {
+      "context_before": 12,
+      "message_id": "0x7B",
+      "context_after": 13,
+      "count": 2
+    },
+    {
+      "context_before": 14,
+      "message_id": "0x0C",
+      "context_after": 15,
+      "count": 2
+    },
+    {
+      "context_before": 15,
+      "message_id": "0x0C",
+      "context_after": 16,
+      "count": 2
+    },
+    {
+      "context_before": 15,
+      "message_id": "0x0D",
+      "context_after": 16,
+      "count": 2
+    },
+    {
+      "context_before": 16,
+      "message_id": "0x0D",
+      "context_after": 15,
+      "count": 2
+    },
+    {
+      "context_before": 16,
+      "message_id": "0x7B",
+      "context_after": 4,
+      "count": 2
+    },
+    {
+      "context_before": 17,
+      "message_id": "0x20",
+      "context_after": 18,
+      "count": 2
+    },
+    {
+      "context_before": 17,
+      "message_id": "0x7B",
+      "context_after": 6,
+      "count": 2
+    },
+    {
+      "context_before": 18,
+      "message_id": "0x0A",
+      "context_after": 19,
+      "count": 2
+    },
+    {
+      "context_before": 18,
+      "message_id": "0x7B",
+      "context_after": 8,
+      "count": 2
+    },
+    {
+      "context_before": 19,
+      "message_id": "0x12",
+      "context_after": 20,
+      "count": 2
+    },
+    {
+      "context_before": 19,
+      "message_id": "0x13",
+      "context_after": 20,
+      "count": 2
+    },
+    {
+      "context_before": 20,
+      "message_id": "0x21",
+      "context_after": 18,
+      "count": 2
+    },
+    {
+      "context_before": 20,
+      "message_id": "0xFA",
+      "context_after": 21,
+      "count": 2
+    },
+    {
+      "context_before": 21,
+      "message_id": "0xFA",
+      "context_after": 22,
+      "count": 2
+    },
+    {
+      "context_before": 28,
+      "message_id": "0xFA",
+      "context_after": 29,
+      "count": 2
+    },
+    {
+      "context_before": 32,
+      "message_id": "0x0A",
+      "context_after": 33,
+      "count": 2
+    },
+    {
+      "context_before": 33,
+      "message_id": "0xFA",
+      "context_after": 34,
+      "count": 2
+    },
+    {
+      "context_before": 34,
+      "message_id": "0xFA",
+      "context_after": 35,
+      "count": 2
+    },
+    {
+      "context_before": 37,
+      "message_id": "0xFA",
+      "context_after": 38,
+      "count": 2
+    },
+    {
+      "context_before": 38,
+      "message_id": "0xFA",
+      "context_after": 39,
+      "count": 2
+    },
+    {
+      "context_before": 39,
+      "message_id": "0xFA",
+      "context_after": 40,
+      "count": 2
+    },
+    {
+      "context_before": 41,
+      "message_id": "0x0A",
+      "context_after": 42,
+      "count": 2
+    },
+    {
+      "context_before": 49,
+      "message_id": "0xFA",
+      "context_after": 50,
+      "count": 2
+    },
+    {
+      "context_before": 3,
+      "message_id": "0x0B",
+      "context_after": 11,
+      "count": 1
+    },
+    {
+      "context_before": 3,
+      "message_id": "0x0B",
+      "context_after": 14,
+      "count": 1
+    },
+    {
+      "context_before": 9,
+      "message_id": "0x0B",
+      "context_after": 26,
+      "count": 1
+    },
+    {
+      "context_before": 9,
+      "message_id": "0x7B",
+      "context_after": 10,
+      "count": 1
+    },
+    {
+      "context_before": 10,
+      "message_id": "0x0B",
+      "context_after": 27,
+      "count": 1
+    },
+    {
+      "context_before": 10,
+      "message_id": "0x7B",
+      "context_after": 11,
+      "count": 1
+    },
+    {
+      "context_before": 11,
+      "message_id": "0x0A",
+      "context_after": 12,
+      "count": 1
+    },
+    {
+      "context_before": 11,
+      "message_id": "0x0B",
+      "context_after": 12,
+      "count": 1
+    },
+    {
+      "context_before": 11,
+      "message_id": "0x0B",
+      "context_after": 33,
+      "count": 1
+    },
+    {
+      "context_before": 11,
+      "message_id": "0x17",
+      "context_after": 13,
+      "count": 1
+    },
+    {
+      "context_before": 11,
+      "message_id": "0x7B",
+      "context_after": 12,
+      "count": 1
+    },
+    {
+      "context_before": 11,
+      "message_id": "0xAB",
+      "context_after": 12,
+      "count": 1
+    },
+    {
+      "context_before": 12,
+      "message_id": "0x0B",
+      "context_after": 11,
+      "count": 1
+    },
+    {
+      "context_before": 12,
+      "message_id": "0x17",
+      "context_after": 14,
+      "count": 1
+    },
+    {
+      "context_before": 12,
+      "message_id": "0xAB",
+      "context_after": 13,
+      "count": 1
+    },
+    {
+      "context_before": 13,
+      "message_id": "0x0A",
+      "context_after": 14,
+      "count": 1
+    },
+    {
+      "context_before": 13,
+      "message_id": "0x0B",
+      "context_after": 36,
+      "count": 1
+    },
+    {
+      "context_before": 13,
+      "message_id": "0x7B",
+      "context_after": 3,
+      "count": 1
+    },
+    {
+      "context_before": 13,
+      "message_id": "0x7B",
+      "context_after": 14,
+      "count": 1
+    },
+    {
+      "context_before": 14,
+      "message_id": "0x7B",
+      "context_after": 3,
+      "count": 1
+    },
+    {
+      "context_before": 14,
+      "message_id": "0x7B",
+      "context_after": 15,
+      "count": 1
+    }
+  ],
+  "context_correlations": [
+    {
+      "message_id": "0x0A",
+      "contexts": [
+        4,
+        5,
+        10,
+        11,
+        12,
+        14,
+        17,
+        19,
+        26,
+        27,
+        33,
+        36,
+        37,
+        42,
+        45,
+        47,
+        49
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x0B",
+      "contexts": [
+        4,
+        5,
+        10,
+        11,
+        12,
+        14,
+        17,
+        19,
+        26,
+        27,
+        33,
+        36,
+        37,
+        42,
+        45,
+        47,
+        49
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x0C",
+      "contexts": [
+        6,
+        15,
+        16
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x0D",
+      "contexts": [
+        6,
+        15,
+        16
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x10",
+      "contexts": [
+        31
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x11",
+      "contexts": [
+        31
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x12",
+      "contexts": [
+        20,
+        23,
+        48
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x13",
+      "contexts": [
+        20,
+        23,
+        48
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x15",
+      "contexts": [
+        8
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x16",
+      "contexts": [
+        8
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x17",
+      "contexts": [
+        13,
+        14
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x18",
+      "contexts": [
+        13,
+        14
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x19",
+      "contexts": [
+        1
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x1A",
+      "contexts": [
+        1
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x1E",
+      "contexts": [
+        0
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x1F",
+      "contexts": [
+        0
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x20",
+      "contexts": [
+        7,
+        18,
+        46
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x21",
+      "contexts": [
+        7,
+        18,
+        46
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x2A",
+      "contexts": [
+        24,
+        25,
+        26,
+        28,
+        30,
+        36,
+        41,
+        44
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x2B",
+      "contexts": [
+        24,
+        25,
+        26,
+        28,
+        30,
+        36,
+        41,
+        44
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x79",
+      "contexts": [
+        2
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x7A",
+      "contexts": [
+        2
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x7B",
+      "contexts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0xAB",
+      "contexts": [
+        12,
+        13,
+        43,
+        51
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0xFA",
+      "contexts": [
+        9,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        37,
+        38,
+        39,
+        40,
+        41,
+        43,
+        44,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0xFB",
+      "contexts": [
+        9,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        37,
+        38,
+        39,
+        40,
+        41,
+        43,
+        44,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x12E",
+      "contexts": [
+        3
+      ],
+      "classification": "OBSERVED"
+    },
+    {
+      "message_id": "0x12F",
+      "contexts": [
+        3
+      ],
+      "classification": "OBSERVED"
+    }
+  ],
+  "request_response_candidates": [
+    {
+      "request_id": "0xFA",
+      "response_id": "0xFB",
+      "occurrences": 42,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "stable_across_captures",
+        "repeated",
+        "compatible_context",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0xFB",
+      "response_id": "0xFA",
+      "occurrences": 28,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "stable_across_captures",
+        "repeated",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0A",
+      "response_id": "0x7B",
+      "occurrences": 15,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0B",
+      "response_id": "0xFA",
+      "occurrences": 8,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x2A",
+      "response_id": "0x2B",
+      "occurrences": 8,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "repeated",
+        "compatible_context"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0xFB",
+      "response_id": "0x0A",
+      "occurrences": 8,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0A",
+      "response_id": "0x0B",
+      "occurrences": 5,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "stable_across_captures",
+        "repeated",
+        "compatible_context",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0B",
+      "response_id": "0x0A",
+      "occurrences": 4,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "stable_across_captures",
+        "repeated",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0C",
+      "response_id": "0x0D",
+      "occurrences": 4,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "stable_across_captures",
+        "repeated",
+        "compatible_context",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x7B",
+      "response_id": "0x0A",
+      "occurrences": 4,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0B",
+      "response_id": "0x0C",
+      "occurrences": 3,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "stable_across_captures",
+        "repeated",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0B",
+      "response_id": "0x20",
+      "occurrences": 3,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x12",
+      "response_id": "0x21",
+      "occurrences": 3,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0B",
+      "response_id": "0x17",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x13",
+      "response_id": "0xFA",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x15",
+      "response_id": "0x16",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "stable_across_captures",
+        "repeated",
+        "compatible_context",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x16",
+      "response_id": "0xFA",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x17",
+      "response_id": "0x18",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "stable_across_captures",
+        "repeated",
+        "compatible_context",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x19",
+      "response_id": "0x1A",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "stable_across_captures",
+        "repeated",
+        "compatible_context",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x1A",
+      "response_id": "0x79",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x1E",
+      "response_id": "0x1F",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "stable_across_captures",
+        "repeated",
+        "compatible_context",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x1F",
+      "response_id": "0x19",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x20",
+      "response_id": "0x21",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "stable_across_captures",
+        "repeated",
+        "compatible_context",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x21",
+      "response_id": "0x15",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x2B",
+      "response_id": "0x2A",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "repeated"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x79",
+      "response_id": "0x7A",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "stable_across_captures",
+        "repeated",
+        "compatible_context",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x7A",
+      "response_id": "0x12E",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x7B",
+      "response_id": "0x20",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x12E",
+      "response_id": "0x12F",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "stable_across_captures",
+        "repeated",
+        "compatible_context",
+        "consistent_lengths",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x12F",
+      "response_id": "0x0A",
+      "occurrences": 2,
+      "signals": [
+        "opposite_direction",
+        "stable_across_captures",
+        "repeated",
+        "stable_edge"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x10",
+      "response_id": "0x11",
+      "occurrences": 1,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "compatible_context",
+        "consistent_lengths"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    },
+    {
+      "request_id": "0x12",
+      "response_id": "0x13",
+      "occurrences": 1,
+      "signals": [
+        "opposite_direction",
+        "consecutive_ids",
+        "compatible_context",
+        "consistent_lengths"
+      ],
+      "candidate_type": "REQUEST_RESPONSE_CANDIDATE",
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_confirmation": "UNKNOWN"
+    }
+  ],
+  "fingerprint_repeats": [
+    {
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 4,
+      "fingerprint_prefix": "2c0114909d7d649e",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 5,
+      "fingerprint_prefix": "fff200d2f10f1dde",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 10,
+      "fingerprint_prefix": "915325582db0b3f0",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 19,
+      "fingerprint_prefix": "3edb77adcad9c36c",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x0C",
+      "direction": "client_to_server",
+      "context": 6,
+      "fingerprint_prefix": "74a624678e2981a0",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x0C",
+      "direction": "client_to_server",
+      "context": 15,
+      "fingerprint_prefix": "15451c49e1e7ed6e",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x0C",
+      "direction": "client_to_server",
+      "context": 16,
+      "fingerprint_prefix": "2b88efc747e04f5e",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x0D",
+      "direction": "server_to_client",
+      "context": 6,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x0D",
+      "direction": "server_to_client",
+      "context": 15,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x0D",
+      "direction": "server_to_client",
+      "context": 16,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x12",
+      "direction": "client_to_server",
+      "context": 20,
+      "fingerprint_prefix": "24ebee5441871a44",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x13",
+      "direction": "server_to_client",
+      "context": 20,
+      "fingerprint_prefix": "819538159cefc7a3",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x16",
+      "direction": "server_to_client",
+      "context": 8,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x20",
+      "direction": "client_to_server",
+      "context": 7,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x20",
+      "direction": "client_to_server",
+      "context": 18,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x21",
+      "direction": "server_to_client",
+      "context": 7,
+      "fingerprint_prefix": "66441512e833b3c4",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x21",
+      "direction": "server_to_client",
+      "context": 18,
+      "fingerprint_prefix": "66441512e833b3c4",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x79",
+      "direction": "client_to_server",
+      "context": 2,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x7A",
+      "direction": "server_to_client",
+      "context": 2,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 9,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 21,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 22,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 29,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 32,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 34,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 35,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 38,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 39,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 40,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 50,
+      "fingerprint_prefix": "e3b0c44298fc1c14",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFB",
+      "direction": "server_to_client",
+      "context": 9,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFB",
+      "direction": "server_to_client",
+      "context": 21,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFB",
+      "direction": "server_to_client",
+      "context": 22,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFB",
+      "direction": "server_to_client",
+      "context": 29,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFB",
+      "direction": "server_to_client",
+      "context": 32,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFB",
+      "direction": "server_to_client",
+      "context": 34,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFB",
+      "direction": "server_to_client",
+      "context": 35,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFB",
+      "direction": "server_to_client",
+      "context": 38,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFB",
+      "direction": "server_to_client",
+      "context": 39,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFB",
+      "direction": "server_to_client",
+      "context": 40,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0xFB",
+      "direction": "server_to_client",
+      "context": 50,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    },
+    {
+      "message_id": "0x12F",
+      "direction": "server_to_client",
+      "context": 3,
+      "fingerprint_prefix": "48b576dfc3447c7a",
+      "repeat_count": 2
+    }
+  ],
+  "payload_variations": [
+    {
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 11,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 17,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 33,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 42,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 45,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x0B",
+      "direction": "server_to_client",
+      "context": 4,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x0B",
+      "direction": "server_to_client",
+      "context": 5,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x0B",
+      "direction": "server_to_client",
+      "context": 10,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x0B",
+      "direction": "server_to_client",
+      "context": 11,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x0B",
+      "direction": "server_to_client",
+      "context": 17,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x0B",
+      "direction": "server_to_client",
+      "context": 19,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x0B",
+      "direction": "server_to_client",
+      "context": 33,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x0B",
+      "direction": "server_to_client",
+      "context": 42,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x0B",
+      "direction": "server_to_client",
+      "context": 45,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x15",
+      "direction": "client_to_server",
+      "context": 8,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x19",
+      "direction": "client_to_server",
+      "context": 1,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x1A",
+      "direction": "server_to_client",
+      "context": 1,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x1E",
+      "direction": "client_to_server",
+      "context": 0,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x1F",
+      "direction": "server_to_client",
+      "context": 0,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 1,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 2,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 3,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 4,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 5,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 6,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 7,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 8,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 9,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 10,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 11,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 12,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 13,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 14,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 15,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 16,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 17,
+      "distinct_fingerprints": 2
+    },
+    {
+      "message_id": "0x12E",
+      "direction": "client_to_server",
+      "context": 3,
+      "distinct_fingerprints": 2
+    }
+  ],
+  "cross_message_correlations": [
+    {
+      "from_id": "0x7B",
+      "to_id": "0x7B",
+      "from_offset": 0,
+      "to_offset": 0,
+      "width": 2,
+      "matching_pairs": 16,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x7B",
+      "to_id": "0x7B",
+      "from_offset": 0,
+      "to_offset": 0,
+      "width": 4,
+      "matching_pairs": 16,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x0D",
+      "to_id": "0x0D",
+      "from_offset": 0,
+      "to_offset": 0,
+      "width": 2,
+      "matching_pairs": 10,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x0A",
+      "to_id": "0x7B",
+      "from_offset": 1200,
+      "to_offset": 0,
+      "width": 2,
+      "matching_pairs": 9,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x7B",
+      "to_id": "0x7B",
+      "from_offset": 21,
+      "to_offset": 0,
+      "width": 2,
+      "matching_pairs": 6,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x0A",
+      "to_id": "0x7B",
+      "from_offset": 1200,
+      "to_offset": 21,
+      "width": 2,
+      "matching_pairs": 4,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x7B",
+      "to_id": "0x0A",
+      "from_offset": 0,
+      "to_offset": 1200,
+      "width": 2,
+      "matching_pairs": 4,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x7B",
+      "to_id": "0x7B",
+      "from_offset": 0,
+      "to_offset": 213,
+      "width": 2,
+      "matching_pairs": 4,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x0B",
+      "to_id": "0x13",
+      "from_offset": 0,
+      "to_offset": 0,
+      "width": 2,
+      "matching_pairs": 3,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x0A",
+      "to_id": "0x7B",
+      "from_offset": 4,
+      "to_offset": 0,
+      "width": 2,
+      "matching_pairs": 2,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x0A",
+      "to_id": "0x7B",
+      "from_offset": 1200,
+      "to_offset": 22,
+      "width": 2,
+      "matching_pairs": 2,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x0C",
+      "to_id": "0x0C",
+      "from_offset": 2,
+      "to_offset": 2,
+      "width": 4,
+      "matching_pairs": 2,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x0C",
+      "to_id": "0x0C",
+      "from_offset": 3,
+      "to_offset": 3,
+      "width": 2,
+      "matching_pairs": 2,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x7B",
+      "to_id": "0x7B",
+      "from_offset": 21,
+      "to_offset": 0,
+      "width": 4,
+      "matching_pairs": 2,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x7B",
+      "to_id": "0x7B",
+      "from_offset": 22,
+      "to_offset": 0,
+      "width": 2,
+      "matching_pairs": 2,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x7B",
+      "to_id": "0x7B",
+      "from_offset": 79,
+      "to_offset": 0,
+      "width": 2,
+      "matching_pairs": 2,
+      "semantic_meaning": "UNKNOWN"
+    },
+    {
+      "from_id": "0x7B",
+      "to_id": "0x7B",
+      "from_offset": 79,
+      "to_offset": 213,
+      "width": 2,
+      "matching_pairs": 2,
+      "semantic_meaning": "UNKNOWN"
+    }
+  ],
+  "periodic_candidates": [
+    {
+      "message_id": "0x0A",
+      "paired_id": null,
+      "approximately_periodic": false,
+      "median_interval": 21.5,
+      "jitter": 18.291666666666668,
+      "unit": "frame_order",
+      "external_reference": "generated-completion-request"
+    },
+    {
+      "message_id": "0x0B",
+      "paired_id": null,
+      "approximately_periodic": false,
+      "median_interval": 16.0,
+      "jitter": 18.958333333333332,
+      "unit": "frame_order",
+      "external_reference": "generated-completion-response"
+    },
+    {
+      "message_id": "0x2A",
+      "paired_id": null,
+      "approximately_periodic": false,
+      "median_interval": 11.0,
+      "jitter": 38.142857142857146,
+      "unit": "frame_order",
+      "external_reference": null
+    },
+    {
+      "message_id": "0x2B",
+      "paired_id": null,
+      "approximately_periodic": false,
+      "median_interval": 11.0,
+      "jitter": 38.142857142857146,
+      "unit": "frame_order",
+      "external_reference": null
+    },
+    {
+      "message_id": "0x7B",
+      "paired_id": null,
+      "approximately_periodic": false,
+      "median_interval": 7.0,
+      "jitter": 13.625,
+      "unit": "frame_order",
+      "external_reference": null
+    },
+    {
+      "message_id": "0xFA",
+      "paired_id": null,
+      "approximately_periodic": false,
+      "median_interval": 4.5,
+      "jitter": 12.425,
+      "unit": "frame_order",
+      "external_reference": "keepalive-request"
+    },
+    {
+      "message_id": "0xFB",
+      "paired_id": null,
+      "approximately_periodic": false,
+      "median_interval": 4.5,
+      "jitter": 12.425,
+      "unit": "frame_order",
+      "external_reference": "keepalive-status"
+    },
+    {
+      "message_id": "0xFA",
+      "paired_id": "0xFB",
+      "approximately_periodic": false,
+      "median_interval": 4.5,
+      "jitter": 12.425,
+      "unit": "frame_order",
+      "external_reference": "keepalive-request"
+    }
+  ],
+  "temporal_clusters": [
+    {
+      "pattern": "0x2A→0x2B",
+      "cluster_size": 3,
+      "captures": 1
+    },
+    {
+      "pattern": "0xFA→0xFB",
+      "cluster_size": 29,
+      "captures": 2
+    }
+  ],
+  "sequence_divergence": {
+    "common_prefix_length": 25,
+    "common_suffix_length": 0,
+    "divergence_index": 25,
+    "capture_a_message": 10,
+    "capture_b_message": 171,
+    "label": "Observed"
+  },
+  "alignment_summary": [
+    {
+      "kind": "COMMON",
+      "message_ids": "0x1E→0x1F→0x19→0x1A→0x79→0x7A→0x12E→0x12F→0x0A→0x0B→0x0A→0x0B→0x0C→0x0D→0x7B→0x20→0x21→0x15→0x16→0xFA→0xFB→0x0A→0x7B→0x0B→0x0A",
+      "length": 25
+    },
+    {
+      "kind": "A_ONLY",
+      "message_ids": "0x0A",
+      "length": 1
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0xAB",
+      "length": 1
+    },
+    {
+      "kind": "A_ONLY",
+      "message_ids": "0x7B",
+      "length": 1
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x0B",
+      "length": 1
+    },
+    {
+      "kind": "A_ONLY",
+      "message_ids": "0x0B",
+      "length": 1
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x17→0x18",
+      "length": 2
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0x0A→0x7B→0x0B",
+      "length": 3
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x0C→0x0C→0x0D→0x0D→0x7B→0x7B→0x0A→0x7B→0x7B→0x0B→0x20→0x0A→0x12→0x21→0x7B→0x0B→0x13→0xFA→0xFB→0xFA→0xFB",
+      "length": 21
+    },
+    {
+      "kind": "A_ONLY",
+      "message_ids": "0xFA→0xFB→0xFA→0xFB→0xFA→0xFB",
+      "length": 6
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0x12→0x13→0x2A→0x2B→0x2A→0x2B→0x2A→0x2B",
+      "length": 8
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x0A→0x7B",
+      "length": 2
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0x7B",
+      "length": 1
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x0B",
+      "length": 1
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0x2A→0x2B",
+      "length": 2
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0xFA→0xFB",
+      "length": 2
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0x2A→0x2B→0x10→0x11→0x7B→0x7B→0x7B→0x7B",
+      "length": 8
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0xFA→0xFB",
+      "length": 2
+    },
+    {
+      "kind": "A_ONLY",
+      "message_ids": "0xFA→0xFB→0xFA→0xFB→0xFA→0xFB→0xFA→0xFB",
+      "length": 8
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x0A→0x7B",
+      "length": 2
+    },
+    {
+      "kind": "A_ONLY",
+      "message_ids": "0x7B",
+      "length": 1
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x0B→0xFA→0xFB→0xFA→0xFB",
+      "length": 5
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0x2A→0x2B→0x7B",
+      "length": 3
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x0A→0x7B→0x7B→0x0B→0xFA→0xFB→0xFA→0xFB→0xFA→0xFB",
+      "length": 10
+    },
+    {
+      "kind": "A_ONLY",
+      "message_ids": "0xFA→0xFB→0xFA→0xFB",
+      "length": 4
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0x2A→0x2B",
+      "length": 2
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x0A",
+      "length": 1
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0x0B→0xAB→0x2A→0x2B",
+      "length": 4
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x7B",
+      "length": 1
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0x0A",
+      "length": 1
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x7B",
+      "length": 1
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0x7B",
+      "length": 1
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x0B",
+      "length": 1
+    },
+    {
+      "kind": "A_ONLY",
+      "message_ids": "0xFA→0xFB→0xFA→0xFB",
+      "length": 4
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0x20",
+      "length": 1
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x0A",
+      "length": 1
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0x12→0x21",
+      "length": 2
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0x7B→0x7B→0x0B",
+      "length": 3
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0x13→0x0A→0x7B→0x7B→0x0B",
+      "length": 5
+    },
+    {
+      "kind": "COMMON",
+      "message_ids": "0xFA→0xFB",
+      "length": 2
+    },
+    {
+      "kind": "A_ONLY",
+      "message_ids": "0xFA→0xFB→0xFA→0xFB→0xFA→0xFB→0xFA→0xFB→0xFA→0xFB→0xFA→0xFB→0xFA→0xFB→0xFA→0xFB→0xFA→0xFB",
+      "length": 18
+    },
+    {
+      "kind": "B_ONLY",
+      "message_ids": "0xAB",
+      "length": 1
+    }
+  ],
+  "external_references": [
+    {
+      "message_id": "0x0A",
+      "external_reference": "generated-completion-request",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x0B",
+      "external_reference": "generated-completion-response",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x0C",
+      "external_reference": "status-like-request",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x0D",
+      "external_reference": "status-like-response",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x19",
+      "external_reference": "session-login-request",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x1A",
+      "external_reference": "session-login-response",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x1E",
+      "external_reference": "destiny-service-handshake-request",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x1F",
+      "external_reference": "destiny-service-handshake-response",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x79",
+      "external_reference": "encrypted-handshake-request",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x7A",
+      "external_reference": "encrypted-handshake-status",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0xFA",
+      "external_reference": "keepalive-request",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0xFB",
+      "external_reference": "keepalive-status",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x12E",
+      "external_reference": "nat-report",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x12F",
+      "external_reference": "nat-report-status",
+      "source": "messages.rs"
+    }
+  ]
+}

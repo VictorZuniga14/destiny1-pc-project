@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "notes": "M2.9 multi-capture registry. Secrets/wire live under evidence/local (gitignored). Do not commit keys.",
+  "captures": [
+    {
+      "capture_id": "20260529-003132",
+      "status": "pipeline_ready",
+      "independent": true,
+      "pipeline_fixture": "../../../evidence/local/bap_session_verify.json",
+      "notes": "Primary PS3 capture; M2.3–M2.8 VERIFIED"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "status": "pipeline_ready",
+      "independent": true,
+      "pipeline_fixture": "../../../evidence/local/bap_session_verify_20260608-231100.json",
+      "notes": "Second independent PS3 capture (first BAP session only, 126 frames). Prepared offline from d1-re pcap+https_flows+jsonl."
+    }
+  ],
+  "external_catalog": {
+    "source": "external/d1-re/captures/",
+    "note": "Many captures exist; only pipeline_ready entries above count for VERIFIED_MULTI_CAPTURE."
+  }
+}

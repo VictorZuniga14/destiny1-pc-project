@@ -1,19 +1,68 @@
 # External projects
 
-Esta carpeta documenta proyectos externos utilizados como referencia, dependencia o herramienta.
+Esta carpeta documenta **y aloja clones locales** de proyectos externos usados como referencia o herramienta.
 
-## Iniciales
+**Regla:** no copiar su código al árbol propio del proyecto (`network/`, `server/`, etc.) sin revisar licencia. Los clones viven aquí y **no se versionan** en `destiny1-pc-project` (ver `.gitignore`).
 
-### kallsyms/d1-re
+## Clones locales
 
-Investigación pública relacionada con reverse engineering de la red de Destiny 1.
+```text
+external/
+├── d1-re/        # kallsyms/d1-re
+├── tiger-pkg/    # v4nguard/tiger-pkg
+└── quicktag/     # v4nguard/quicktag
+```
 
-### v4nguard/tiger-pkg
+Para (re)clonar:
 
-Herramientas relacionadas con paquetes del motor Tiger.
+```bash
+cd external
+git clone --depth 1 https://github.com/kallsyms/d1-re.git d1-re
+git clone --depth 1 https://github.com/v4nguard/tiger-pkg.git tiger-pkg
+git clone --depth 1 https://github.com/v4nguard/quicktag.git quicktag
+```
 
-### v4nguard/quicktag
+## kallsyms/d1-re
 
-Herramientas para análisis de estructuras del motor Tiger.
+- **URL:** https://github.com/kallsyms/d1-re
+- **Clone local:** `external/d1-re/`
+- **Qué es:** artefactos de investigación / capturas PS3 y herramienta de descifrado BAP.
+- **Licencia:** no declarada.
+- **Uso permitido aquí:** referencia e investigación; citar paths/funciones en `docs/networking/`.
+- **No hacer:** copiar código a `network/`; commitear PCAPs, tokens, claves ni `decrypted_bap.jsonl` al repo principal.
 
-No copiar código de estos proyectos aquí sin revisar primero sus licencias.
+Documentación derivada (propia): [docs/networking/](../docs/networking/).
+
+Para validar el pipeline offline con evidencia real (fuera de Git):
+
+```text
+# copiar UNA captura ya descifrada a evidencia local gitignored
+evidence/local/decrypted_bap.jsonl
+
+cd network
+cargo run -- timeline-external ../evidence/local/decrypted_bap.jsonl
+```
+
+Ejemplo de fuente dentro del clone (no commitear al repo principal):
+
+```text
+external/d1-re/captures/<timestamp>/decrypted/decrypted_bap.jsonl
+external/d1-re/captures/<timestamp>/LOG
+```
+
+## v4nguard/tiger-pkg
+
+- **URL:** https://github.com/v4nguard/tiger-pkg
+- **Clone local:** `external/tiger-pkg/`
+- **Qué es:** biblioteca para paquetes del motor Tiger (Destiny 1/2 y otros).
+- **Licencia:** MIT.
+- **Uso previsto:** análisis de paquetes Tiger (fase cliente/assets; no es la fuente del protocolo de sesión BAP).
+
+## v4nguard/quicktag
+
+- **URL:** https://github.com/v4nguard/quicktag
+- **Clone local:** `external/quicktag/`
+- **Qué es:** explorador de estructuras / tags / strings en packages Tiger.
+- **Licencia:** GPL-3.0.
+- **Uso:** herramienta externa.
+- **No hacer:** integrar código GPL en componentes propios sin analizar implicaciones de licencia (copyleft).

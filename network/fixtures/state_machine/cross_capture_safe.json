@@ -1,0 +1,1754 @@
+{
+  "capture_a": "20260529-003132",
+  "capture_b": "20260608-231100",
+  "nodes": [
+    "BRANCH_CAPTURE_A_01",
+    "BRANCH_CAPTURE_B_01",
+    "POST_STARTUP",
+    "REPEATING_CLUSTER_01",
+    "START",
+    "STARTUP_SEQUENCE"
+  ],
+  "states": [
+    {
+      "capture_id": "20260529-003132",
+      "state_id": "BRANCH_CAPTURE_A_01",
+      "first_frame": 25,
+      "last_frame": 107,
+      "message_count": 43,
+      "repeating": false,
+      "periodicity": "n/a",
+      "classification": "OBSERVED"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "state_id": "POST_STARTUP",
+      "first_frame": 8,
+      "last_frame": 24,
+      "message_count": 15,
+      "repeating": false,
+      "periodicity": "n/a",
+      "classification": "OBSERVED"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "state_id": "REPEATING_CLUSTER_01",
+      "first_frame": 19,
+      "last_frame": 127,
+      "message_count": 62,
+      "repeating": true,
+      "periodicity": "UNKNOWN",
+      "classification": "OBSERVED"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "state_id": "STARTUP_SEQUENCE",
+      "first_frame": 0,
+      "last_frame": 7,
+      "message_count": 8,
+      "repeating": false,
+      "periodicity": "n/a",
+      "classification": "OBSERVED"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "state_id": "BRANCH_CAPTURE_B_01",
+      "first_frame": 25,
+      "last_frame": 125,
+      "message_count": 81,
+      "repeating": false,
+      "periodicity": "n/a",
+      "classification": "OBSERVED"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "state_id": "POST_STARTUP",
+      "first_frame": 8,
+      "last_frame": 24,
+      "message_count": 15,
+      "repeating": false,
+      "periodicity": "n/a",
+      "classification": "OBSERVED"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "state_id": "REPEATING_CLUSTER_01",
+      "first_frame": 19,
+      "last_frame": 124,
+      "message_count": 22,
+      "repeating": true,
+      "periodicity": "UNKNOWN",
+      "classification": "OBSERVED"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "state_id": "STARTUP_SEQUENCE",
+      "first_frame": 0,
+      "last_frame": 7,
+      "message_count": 8,
+      "repeating": false,
+      "periodicity": "n/a",
+      "classification": "OBSERVED"
+    }
+  ],
+  "transitions": [
+    {
+      "from": "REPEATING_CLUSTER_01",
+      "to": "REPEATING_CLUSTER_01",
+      "message_id": "0xFB",
+      "direction": "server_to_client",
+      "context": 9,
+      "count": 42,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "REPEATING_CLUSTER_01",
+      "to": "REPEATING_CLUSTER_01",
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 22,
+      "count": 28,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 3,
+      "count": 23,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_A_01",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 3,
+      "count": 15,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x0B",
+      "direction": "server_to_client",
+      "context": 11,
+      "count": 11,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_A_01",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0x0B",
+      "direction": "server_to_client",
+      "context": 11,
+      "count": 9,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 14,
+      "count": 9,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x2B",
+      "direction": "server_to_client",
+      "context": 24,
+      "count": 8,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_A_01",
+      "to": "REPEATING_CLUSTER_01",
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 21,
+      "count": 6,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "REPEATING_CLUSTER_01",
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 21,
+      "count": 6,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "POST_STARTUP",
+      "to": "POST_STARTUP",
+      "message_id": "0x0B",
+      "direction": "server_to_client",
+      "context": 4,
+      "count": 6,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x2A",
+      "direction": "client_to_server",
+      "context": 24,
+      "count": 5,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "REPEATING_CLUSTER_01",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 26,
+      "count": 5,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "POST_STARTUP",
+      "to": "POST_STARTUP",
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 5,
+      "count": 4,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "POST_STARTUP",
+      "to": "POST_STARTUP",
+      "message_id": "0x7B",
+      "direction": "server_to_client",
+      "context": 1,
+      "count": 4,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x13",
+      "direction": "server_to_client",
+      "context": 20,
+      "count": 3,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "REPEATING_CLUSTER_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x2A",
+      "direction": "client_to_server",
+      "context": 30,
+      "count": 3,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_A_01",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 17,
+      "count": 2,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_A_01",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0x0C",
+      "direction": "client_to_server",
+      "context": 15,
+      "count": 2,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_A_01",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0x0D",
+      "direction": "server_to_client",
+      "context": 15,
+      "count": 2,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x0C",
+      "direction": "client_to_server",
+      "context": 15,
+      "count": 2,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x0D",
+      "direction": "server_to_client",
+      "context": 15,
+      "count": 2,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x12",
+      "direction": "client_to_server",
+      "context": 20,
+      "count": 2,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x20",
+      "direction": "client_to_server",
+      "context": 18,
+      "count": 2,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x21",
+      "direction": "server_to_client",
+      "context": 18,
+      "count": 2,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "POST_STARTUP",
+      "to": "POST_STARTUP",
+      "message_id": "0x0C",
+      "direction": "client_to_server",
+      "context": 6,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "POST_STARTUP",
+      "to": "POST_STARTUP",
+      "message_id": "0x0D",
+      "direction": "server_to_client",
+      "context": 6,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "POST_STARTUP",
+      "to": "POST_STARTUP",
+      "message_id": "0x15",
+      "direction": "client_to_server",
+      "context": 8,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "POST_STARTUP",
+      "to": "POST_STARTUP",
+      "message_id": "0x16",
+      "direction": "server_to_client",
+      "context": 8,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "POST_STARTUP",
+      "to": "POST_STARTUP",
+      "message_id": "0x20",
+      "direction": "client_to_server",
+      "context": 7,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "POST_STARTUP",
+      "to": "POST_STARTUP",
+      "message_id": "0x21",
+      "direction": "server_to_client",
+      "context": 7,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "POST_STARTUP",
+      "to": "REPEATING_CLUSTER_01",
+      "message_id": "0xFA",
+      "direction": "client_to_server",
+      "context": 9,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "REPEATING_CLUSTER_01",
+      "to": "POST_STARTUP",
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 10,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "START",
+      "to": "STARTUP_SEQUENCE",
+      "message_id": "0x1E",
+      "direction": "client_to_server",
+      "context": 0,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "STARTUP_SEQUENCE",
+      "to": "POST_STARTUP",
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 4,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "STARTUP_SEQUENCE",
+      "to": "STARTUP_SEQUENCE",
+      "message_id": "0x19",
+      "direction": "client_to_server",
+      "context": 1,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "STARTUP_SEQUENCE",
+      "to": "STARTUP_SEQUENCE",
+      "message_id": "0x1A",
+      "direction": "server_to_client",
+      "context": 1,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "STARTUP_SEQUENCE",
+      "to": "STARTUP_SEQUENCE",
+      "message_id": "0x1F",
+      "direction": "server_to_client",
+      "context": 0,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "STARTUP_SEQUENCE",
+      "to": "STARTUP_SEQUENCE",
+      "message_id": "0x79",
+      "direction": "client_to_server",
+      "context": 2,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "STARTUP_SEQUENCE",
+      "to": "STARTUP_SEQUENCE",
+      "message_id": "0x7A",
+      "direction": "server_to_client",
+      "context": 2,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "STARTUP_SEQUENCE",
+      "to": "STARTUP_SEQUENCE",
+      "message_id": "0x12E",
+      "direction": "client_to_server",
+      "context": 3,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "STARTUP_SEQUENCE",
+      "to": "STARTUP_SEQUENCE",
+      "message_id": "0x12F",
+      "direction": "server_to_client",
+      "context": 3,
+      "count": 2,
+      "captures": 2,
+      "classification": "STABLE_CROSS_CAPTURE",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_A_01",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0x12",
+      "direction": "client_to_server",
+      "context": 20,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_A_01",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0x13",
+      "direction": "server_to_client",
+      "context": 20,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_A_01",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0x17",
+      "direction": "client_to_server",
+      "context": 14,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_A_01",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0x18",
+      "direction": "server_to_client",
+      "context": 14,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_A_01",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0x20",
+      "direction": "client_to_server",
+      "context": 18,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_A_01",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0x21",
+      "direction": "server_to_client",
+      "context": 18,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_A_01",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0xAB",
+      "direction": "client_to_server",
+      "context": 13,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": false,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x10",
+      "direction": "client_to_server",
+      "context": 31,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x11",
+      "direction": "server_to_client",
+      "context": 31,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x17",
+      "direction": "client_to_server",
+      "context": 13,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x18",
+      "direction": "server_to_client",
+      "context": 13,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "BRANCH_CAPTURE_B_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0xAB",
+      "direction": "client_to_server",
+      "context": 43,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": false,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "POST_STARTUP",
+      "to": "BRANCH_CAPTURE_A_01",
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 12,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "POST_STARTUP",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0xAB",
+      "direction": "client_to_server",
+      "context": 12,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": false,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "REPEATING_CLUSTER_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x0A",
+      "direction": "client_to_server",
+      "context": 33,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "REPEATING_CLUSTER_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0x12",
+      "direction": "client_to_server",
+      "context": 23,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": true,
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "from": "REPEATING_CLUSTER_01",
+      "to": "BRANCH_CAPTURE_B_01",
+      "message_id": "0xAB",
+      "direction": "client_to_server",
+      "context": 51,
+      "count": 1,
+      "captures": 1,
+      "classification": "CAPTURE_SPECIFIC",
+      "request_response_candidate": false,
+      "semantic_status": "UNKNOWN"
+    }
+  ],
+  "startup": {
+    "sequence": "0x1E→0x1F→0x19→0x1A→0x79→0x7A→0x12E→0x12F",
+    "capture_a_observed": true,
+    "capture_b_observed": true,
+    "common_prefix": true,
+    "classification": "OBSERVED",
+    "structural_label": "STABLE_STARTUP_SEQUENCE"
+  },
+  "branches": {
+    "divergence_index": 25,
+    "message_a": "0x0A",
+    "message_b": "0xAB",
+    "branch_a_state": "BRANCH_CAPTURE_A_01",
+    "branch_b_state": "BRANCH_CAPTURE_B_01",
+    "classification": "OBSERVED"
+  },
+  "repeating_cluster": {
+    "state_id": "REPEATING_CLUSTER_01",
+    "message_ids": [
+      "0xFA",
+      "0xFB"
+    ],
+    "repeating": true,
+    "periodicity": "UNKNOWN",
+    "captures": 2,
+    "classification": "OBSERVED",
+    "external_reference": "keepalive-request",
+    "external_source": "messages.rs"
+  },
+  "context_transitions": [
+    {
+      "context_before": 0,
+      "message_id": "0x19",
+      "context_after": 1,
+      "count": 2
+    },
+    {
+      "context_before": 1,
+      "message_id": "0x20",
+      "context_after": 7,
+      "count": 2
+    },
+    {
+      "context_before": 1,
+      "message_id": "0x79",
+      "context_after": 2,
+      "count": 2
+    },
+    {
+      "context_before": 2,
+      "message_id": "0x0B",
+      "context_after": 10,
+      "count": 2
+    },
+    {
+      "context_before": 2,
+      "message_id": "0x12E",
+      "context_after": 3,
+      "count": 2
+    },
+    {
+      "context_before": 3,
+      "message_id": "0x0A",
+      "context_after": 4,
+      "count": 2
+    },
+    {
+      "context_before": 4,
+      "message_id": "0x0A",
+      "context_after": 5,
+      "count": 2
+    },
+    {
+      "context_before": 4,
+      "message_id": "0x7B",
+      "context_after": 5,
+      "count": 2
+    },
+    {
+      "context_before": 5,
+      "message_id": "0x0A",
+      "context_after": 17,
+      "count": 2
+    },
+    {
+      "context_before": 5,
+      "message_id": "0x0C",
+      "context_after": 6,
+      "count": 2
+    },
+    {
+      "context_before": 6,
+      "message_id": "0x7B",
+      "context_after": 1,
+      "count": 2
+    },
+    {
+      "context_before": 6,
+      "message_id": "0x7B",
+      "context_after": 7,
+      "count": 2
+    },
+    {
+      "context_before": 7,
+      "message_id": "0x0B",
+      "context_after": 17,
+      "count": 2
+    },
+    {
+      "context_before": 7,
+      "message_id": "0x15",
+      "context_after": 8,
+      "count": 2
+    },
+    {
+      "context_before": 8,
+      "message_id": "0x0B",
+      "context_after": 19,
+      "count": 2
+    },
+    {
+      "context_before": 8,
+      "message_id": "0xFA",
+      "context_after": 9,
+      "count": 2
+    },
+    {
+      "context_before": 9,
+      "message_id": "0x0A",
+      "context_after": 10,
+      "count": 2
+    },
+    {
+      "context_before": 10,
+      "message_id": "0x0A",
+      "context_after": 11,
+      "count": 2
+    },
+    {
+      "context_before": 10,
+      "message_id": "0x7B",
+      "context_after": 2,
+      "count": 2
+    },
+    {
+      "context_before": 12,
+      "message_id": "0x7B",
+      "context_after": 13,
+      "count": 2
+    },
+    {
+      "context_before": 14,
+      "message_id": "0x0C",
+      "context_after": 15,
+      "count": 2
+    },
+    {
+      "context_before": 15,
+      "message_id": "0x0C",
+      "context_after": 16,
+      "count": 2
+    },
+    {
+      "context_before": 15,
+      "message_id": "0x0D",
+      "context_after": 16,
+      "count": 2
+    },
+    {
+      "context_before": 16,
+      "message_id": "0x0D",
+      "context_after": 15,
+      "count": 2
+    },
+    {
+      "context_before": 16,
+      "message_id": "0x7B",
+      "context_after": 4,
+      "count": 2
+    },
+    {
+      "context_before": 17,
+      "message_id": "0x20",
+      "context_after": 18,
+      "count": 2
+    },
+    {
+      "context_before": 17,
+      "message_id": "0x7B",
+      "context_after": 6,
+      "count": 2
+    },
+    {
+      "context_before": 18,
+      "message_id": "0x0A",
+      "context_after": 19,
+      "count": 2
+    },
+    {
+      "context_before": 18,
+      "message_id": "0x7B",
+      "context_after": 8,
+      "count": 2
+    },
+    {
+      "context_before": 19,
+      "message_id": "0x12",
+      "context_after": 20,
+      "count": 2
+    },
+    {
+      "context_before": 19,
+      "message_id": "0x13",
+      "context_after": 20,
+      "count": 2
+    },
+    {
+      "context_before": 20,
+      "message_id": "0x21",
+      "context_after": 18,
+      "count": 2
+    },
+    {
+      "context_before": 20,
+      "message_id": "0xFA",
+      "context_after": 21,
+      "count": 2
+    },
+    {
+      "context_before": 21,
+      "message_id": "0xFA",
+      "context_after": 22,
+      "count": 2
+    },
+    {
+      "context_before": 28,
+      "message_id": "0xFA",
+      "context_after": 29,
+      "count": 2
+    },
+    {
+      "context_before": 32,
+      "message_id": "0x0A",
+      "context_after": 33,
+      "count": 2
+    },
+    {
+      "context_before": 33,
+      "message_id": "0xFA",
+      "context_after": 34,
+      "count": 2
+    },
+    {
+      "context_before": 34,
+      "message_id": "0xFA",
+      "context_after": 35,
+      "count": 2
+    },
+    {
+      "context_before": 37,
+      "message_id": "0xFA",
+      "context_after": 38,
+      "count": 2
+    },
+    {
+      "context_before": 38,
+      "message_id": "0xFA",
+      "context_after": 39,
+      "count": 2
+    },
+    {
+      "context_before": 39,
+      "message_id": "0xFA",
+      "context_after": 40,
+      "count": 2
+    },
+    {
+      "context_before": 41,
+      "message_id": "0x0A",
+      "context_after": 42,
+      "count": 2
+    },
+    {
+      "context_before": 49,
+      "message_id": "0xFA",
+      "context_after": 50,
+      "count": 2
+    },
+    {
+      "context_before": 3,
+      "message_id": "0x0B",
+      "context_after": 11,
+      "count": 1
+    },
+    {
+      "context_before": 3,
+      "message_id": "0x0B",
+      "context_after": 14,
+      "count": 1
+    },
+    {
+      "context_before": 9,
+      "message_id": "0x0B",
+      "context_after": 26,
+      "count": 1
+    },
+    {
+      "context_before": 9,
+      "message_id": "0x7B",
+      "context_after": 10,
+      "count": 1
+    },
+    {
+      "context_before": 10,
+      "message_id": "0x0B",
+      "context_after": 27,
+      "count": 1
+    },
+    {
+      "context_before": 10,
+      "message_id": "0x7B",
+      "context_after": 11,
+      "count": 1
+    },
+    {
+      "context_before": 11,
+      "message_id": "0x0A",
+      "context_after": 12,
+      "count": 1
+    },
+    {
+      "context_before": 11,
+      "message_id": "0x0B",
+      "context_after": 12,
+      "count": 1
+    },
+    {
+      "context_before": 11,
+      "message_id": "0x0B",
+      "context_after": 33,
+      "count": 1
+    },
+    {
+      "context_before": 11,
+      "message_id": "0x17",
+      "context_after": 13,
+      "count": 1
+    },
+    {
+      "context_before": 11,
+      "message_id": "0x7B",
+      "context_after": 12,
+      "count": 1
+    },
+    {
+      "context_before": 11,
+      "message_id": "0xAB",
+      "context_after": 12,
+      "count": 1
+    },
+    {
+      "context_before": 12,
+      "message_id": "0x0B",
+      "context_after": 11,
+      "count": 1
+    },
+    {
+      "context_before": 12,
+      "message_id": "0x17",
+      "context_after": 14,
+      "count": 1
+    },
+    {
+      "context_before": 12,
+      "message_id": "0xAB",
+      "context_after": 13,
+      "count": 1
+    },
+    {
+      "context_before": 13,
+      "message_id": "0x0A",
+      "context_after": 14,
+      "count": 1
+    },
+    {
+      "context_before": 13,
+      "message_id": "0x0B",
+      "context_after": 36,
+      "count": 1
+    },
+    {
+      "context_before": 13,
+      "message_id": "0x7B",
+      "context_after": 3,
+      "count": 1
+    },
+    {
+      "context_before": 13,
+      "message_id": "0x7B",
+      "context_after": 14,
+      "count": 1
+    },
+    {
+      "context_before": 14,
+      "message_id": "0x7B",
+      "context_after": 3,
+      "count": 1
+    },
+    {
+      "context_before": 14,
+      "message_id": "0x7B",
+      "context_after": 15,
+      "count": 1
+    }
+  ],
+  "request_response_candidates": [
+    {
+      "request_id": "0xFA",
+      "response_id": "0xFB",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0xFB",
+      "response_id": "0xFA",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0A",
+      "response_id": "0x7B",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0B",
+      "response_id": "0xFA",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x2A",
+      "response_id": "0x2B",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0xFB",
+      "response_id": "0x0A",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0A",
+      "response_id": "0x0B",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0B",
+      "response_id": "0x0A",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0C",
+      "response_id": "0x0D",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x7B",
+      "response_id": "0x0A",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0B",
+      "response_id": "0x0C",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0B",
+      "response_id": "0x20",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x12",
+      "response_id": "0x21",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x0B",
+      "response_id": "0x17",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x13",
+      "response_id": "0xFA",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x15",
+      "response_id": "0x16",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x16",
+      "response_id": "0xFA",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x17",
+      "response_id": "0x18",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x19",
+      "response_id": "0x1A",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x1A",
+      "response_id": "0x79",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x1E",
+      "response_id": "0x1F",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x1F",
+      "response_id": "0x19",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x20",
+      "response_id": "0x21",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x21",
+      "response_id": "0x15",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x2B",
+      "response_id": "0x2A",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x79",
+      "response_id": "0x7A",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x7A",
+      "response_id": "0x12E",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x7B",
+      "response_id": "0x20",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x12E",
+      "response_id": "0x12F",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x12F",
+      "response_id": "0x0A",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x10",
+      "response_id": "0x11",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    },
+    {
+      "request_id": "0x12",
+      "response_id": "0x13",
+      "request_response_candidate": true,
+      "confidence": "STRUCTURAL_HYPOTHESIS",
+      "semantic_status": "UNKNOWN"
+    }
+  ],
+  "semantic_matrix": [
+    {
+      "message_id": "0x0A",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": "generated-completion-request",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x0B",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": "generated-completion-response",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x0C",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": "status-like-request",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x0D",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": "status-like-response",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x10",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x11",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x12",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x13",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x15",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x16",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x17",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x18",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x19",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "startup sequence member",
+      "external_reference": "session-login-request",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x1A",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "startup sequence member",
+      "external_reference": "session-login-response",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x1E",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "startup sequence member",
+      "external_reference": "destiny-service-handshake-request",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x1F",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "startup sequence member",
+      "external_reference": "destiny-service-handshake-response",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x20",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x21",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x2A",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x2B",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x79",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "startup sequence member",
+      "external_reference": "encrypted-handshake-request",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x7A",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "startup sequence member",
+      "external_reference": "encrypted-handshake-status",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x7B",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0xAB",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "post-startup / branch activity",
+      "external_reference": null,
+      "semantic_confidence": "UNKNOWN",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0xFA",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "repeating cluster member",
+      "external_reference": "keepalive-request",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0xFB",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "repeating cluster member",
+      "external_reference": "keepalive-status",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x12E",
+      "observed_behavior": "dirs=C2S",
+      "structural_role": "startup sequence member",
+      "external_reference": "nat-report",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    },
+    {
+      "message_id": "0x12F",
+      "observed_behavior": "dirs=S2C",
+      "structural_role": "startup sequence member",
+      "external_reference": "nat-report-status",
+      "semantic_confidence": "EXTERNAL_REFERENCE",
+      "unknowns": "exact payload semantics"
+    }
+  ],
+  "external_semantics": [
+    {
+      "message_id": "0x0A",
+      "external_name": "generated-completion-request",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x0B",
+      "external_name": "generated-completion-response",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x0C",
+      "external_name": "status-like-request",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x0D",
+      "external_name": "status-like-response",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x19",
+      "external_name": "session-login-request",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x1A",
+      "external_name": "session-login-response",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x1E",
+      "external_name": "destiny-service-handshake-request",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x1F",
+      "external_name": "destiny-service-handshake-response",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x79",
+      "external_name": "encrypted-handshake-request",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x7A",
+      "external_name": "encrypted-handshake-status",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0xFA",
+      "external_name": "keepalive-request",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0xFB",
+      "external_name": "keepalive-status",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x12E",
+      "external_name": "nat-report",
+      "source": "messages.rs"
+    },
+    {
+      "message_id": "0x12F",
+      "external_name": "nat-report-status",
+      "source": "messages.rs"
+    }
+  ],
+  "unknowns": [
+    "exact payload field semantics",
+    "authenticated / login semantic confirmation",
+    "keepalive wall-clock period",
+    "meaning of context values",
+    "gameplay / activity / inventory role of post-startup messages"
+  ],
+  "trace_lengths": {
+    "20260529-003132": 128,
+    "20260608-231100": 126
+  }
+}

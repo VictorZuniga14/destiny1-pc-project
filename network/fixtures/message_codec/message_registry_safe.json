@@ -1,0 +1,286 @@
+{
+  "version": "0.1",
+  "message_count": 28,
+  "entries": [
+    {
+      "id": "0x000a",
+      "direction": "C2S",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": "generated-completion-request",
+      "name_source": "EXTERNAL_REFERENCE"
+    },
+    {
+      "id": "0x000b",
+      "direction": "S2C",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": "generated-completion-response",
+      "name_source": "EXTERNAL_REFERENCE"
+    },
+    {
+      "id": "0x000c",
+      "direction": "C2S",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": "status-like-request",
+      "name_source": "EXTERNAL_REFERENCE"
+    },
+    {
+      "id": "0x000d",
+      "direction": "S2C",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": "status-like-response",
+      "name_source": "EXTERNAL_REFERENCE"
+    },
+    {
+      "id": "0x0010",
+      "direction": "C2S",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x0011",
+      "direction": "S2C",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x0012",
+      "direction": "C2S",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x0013",
+      "direction": "S2C",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x0015",
+      "direction": "C2S",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x0016",
+      "direction": "S2C",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x0017",
+      "direction": "C2S",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x0018",
+      "direction": "S2C",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x0019",
+      "direction": "C2S",
+      "known": true,
+      "codec": "SessionLoginRequest",
+      "length_constraints": "opaque payload (any length including empty)",
+      "status": "OPAQUE_KNOWN",
+      "name": "session-login-request",
+      "name_source": "EXTERNAL_REFERENCE"
+    },
+    {
+      "id": "0x001a",
+      "direction": "S2C",
+      "known": true,
+      "codec": "SessionLoginResponse",
+      "length_constraints": "payload_len == 6 + record_len; record_len >= 0x30; IV=16; HMAC=32",
+      "status": "CONFIRMED_STRUCTURE",
+      "name": "session-login-response",
+      "name_source": "EXTERNAL_REFERENCE"
+    },
+    {
+      "id": "0x001e",
+      "direction": "C2S",
+      "known": true,
+      "codec": "DestinyServiceHandshakeRequest",
+      "length_constraints": "opaque payload (any length including empty)",
+      "status": "OPAQUE_KNOWN",
+      "name": "destiny-service-handshake-request",
+      "name_source": "EXTERNAL_REFERENCE"
+    },
+    {
+      "id": "0x001f",
+      "direction": "S2C",
+      "known": true,
+      "codec": "DestinyServiceHandshakeResponse",
+      "length_constraints": "opaque payload (any length including empty)",
+      "status": "OPAQUE_KNOWN",
+      "name": "destiny-service-handshake-response",
+      "name_source": "EXTERNAL_REFERENCE"
+    },
+    {
+      "id": "0x0020",
+      "direction": "C2S",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x0021",
+      "direction": "S2C",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x002a",
+      "direction": "C2S",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x002b",
+      "direction": "S2C",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x0079",
+      "direction": "C2S",
+      "known": true,
+      "codec": "EncryptedHandshakeRequest",
+      "length_constraints": "opaque payload (any length including empty)",
+      "status": "OPAQUE_KNOWN",
+      "name": "encrypted-handshake-request",
+      "name_source": "EXTERNAL_REFERENCE"
+    },
+    {
+      "id": "0x007a",
+      "direction": "S2C",
+      "known": true,
+      "codec": "EncryptedHandshakeStatus",
+      "length_constraints": "opaque payload (any length including empty)",
+      "status": "OPAQUE_KNOWN",
+      "name": "encrypted-handshake-status",
+      "name_source": "EXTERNAL_REFERENCE"
+    },
+    {
+      "id": "0x007b",
+      "direction": "C2S",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x00ab",
+      "direction": "C2S",
+      "known": false,
+      "codec": "Unknown",
+      "length_constraints": "unknown / preserve raw",
+      "status": "UNKNOWN",
+      "name": null,
+      "name_source": "NONE"
+    },
+    {
+      "id": "0x00fa",
+      "direction": "C2S",
+      "known": true,
+      "codec": "Message0xFA",
+      "length_constraints": "opaque payload (any length including empty)",
+      "status": "OPAQUE_KNOWN",
+      "name": "keepalive-request",
+      "name_source": "EXTERNAL_REFERENCE"
+    },
+    {
+      "id": "0x00fb",
+      "direction": "S2C",
+      "known": true,
+      "codec": "Message0xFB",
+      "length_constraints": "opaque payload (any length including empty)",
+      "status": "OPAQUE_KNOWN",
+      "name": "keepalive-status",
+      "name_source": "EXTERNAL_REFERENCE"
+    },
+    {
+      "id": "0x012e",
+      "direction": "C2S",
+      "known": true,
+      "codec": "Message0x12E",
+      "length_constraints": "opaque payload (any length including empty)",
+      "status": "OPAQUE_KNOWN",
+      "name": "nat-report",
+      "name_source": "EXTERNAL_REFERENCE"
+    },
+    {
+      "id": "0x012f",
+      "direction": "S2C",
+      "known": true,
+      "codec": "Message0x12F",
+      "length_constraints": "opaque payload (any length including empty)",
+      "status": "OPAQUE_KNOWN",
+      "name": "nat-report-status",
+      "name_source": "EXTERNAL_REFERENCE"
+    }
+  ]
+}

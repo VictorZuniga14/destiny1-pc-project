@@ -1,0 +1,11 @@
+# Synthetic session evidence for destiny1-network offline analyzer.
+# All bytes are invented for tests. No real captures, tokens, or secrets.
+# Schema: project-owned (see network/README.md). Not d1-re JSONL.
+
+{"timestamp_ms":0,"direction":"client_to_server","kind":2,"message_id":30,"context":1,"payload_hex":"010203"}
+{"timestamp_ms":31,"direction":"server_to_client","kind":2,"message_id":31,"context":1,"payload_hex":"aabb"}
+{"timestamp_ms":52,"direction":"client_to_server","kind":2,"message_id":25,"context":2,"payload_hex":"dead"}
+{"timestamp_ms":87,"direction":"server_to_client","kind":2,"message_id":26,"context":2,"payload_hex":"beef"}
+{"timestamp_ms":103,"direction":"client_to_server","kind":1,"tag_hex":"000102030405060708090a0b0c0d0e0f","ciphertext_hex":"cafebabe"}
+{"timestamp_ms":120,"direction":"server_to_client","kind":1,"tag_hex":"101112131415161718191a1b1c1d1e1f","ciphertext_hex":"face"}
+{"timestamp_ms":200,"direction":"client_to_server","kind":2,"message_id":57005,"context":0,"payload_hex":""}

@@ -1,0 +1,2174 @@
+{
+  "version": "0.1",
+  "captures": [
+    {
+      "capture_id": "20260529-003132",
+      "tcp_flows": 1,
+      "udp_flows": 30,
+      "udp_packets": 65,
+      "udp_bytes": 4200,
+      "source_ports": [
+        53,
+        3074,
+        3075,
+        52271,
+        52272,
+        52273,
+        52274,
+        52275,
+        52276,
+        52277,
+        52278,
+        52279,
+        52280,
+        52281,
+        52282,
+        52283,
+        52284,
+        52285,
+        52286,
+        52287,
+        52288,
+        52289,
+        52290,
+        52291,
+        52292,
+        52293,
+        52294,
+        52295,
+        52296,
+        52297,
+        52298
+      ],
+      "destination_ports": [
+        53,
+        1900,
+        3074,
+        3075,
+        52271,
+        52272,
+        52273,
+        52274,
+        52275,
+        52276,
+        52277,
+        52278,
+        52279,
+        52280,
+        52281,
+        52282,
+        52283,
+        52284,
+        52285,
+        52286,
+        52287,
+        52288,
+        52289,
+        52290,
+        52291,
+        52293,
+        52294,
+        52295,
+        52297,
+        52298
+      ],
+      "timing_range": [
+        1780039897.142251,
+        1780039969.899691
+      ],
+      "related_tcp_session": "UNKNOWN",
+      "udp_observed": true,
+      "external_address": "REDACTED",
+      "notes": []
+    },
+    {
+      "capture_id": "20260608-231100",
+      "tcp_flows": 1,
+      "udp_flows": 2,
+      "udp_packets": 4,
+      "udp_bytes": 275,
+      "source_ports": [
+        53,
+        49428,
+        49429
+      ],
+      "destination_ports": [
+        53,
+        49428,
+        49429
+      ],
+      "timing_range": [
+        1780985462.400943,
+        1780985462.723265
+      ],
+      "related_tcp_session": "UNKNOWN",
+      "udp_observed": true,
+      "external_address": "REDACTED",
+      "notes": []
+    }
+  ],
+  "flows": [
+    {
+      "flow_id": "UDP_FLOW_01",
+      "first_timestamp": 1780039902.817866,
+      "last_timestamp": 1780039902.817869,
+      "packet_count": 2,
+      "byte_count": 265,
+      "direction": "UNKNOWN",
+      "port_pair": "1900/52292",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_02",
+      "first_timestamp": 1780039901.592601,
+      "last_timestamp": 1780039901.592604,
+      "packet_count": 2,
+      "byte_count": 265,
+      "direction": "UNKNOWN",
+      "port_pair": "1900/52296",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_03",
+      "first_timestamp": 1780039904.528884,
+      "last_timestamp": 1780039906.797876,
+      "packet_count": 7,
+      "byte_count": 40,
+      "direction": "UNKNOWN",
+      "port_pair": "3074/3074",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_04",
+      "first_timestamp": 1780039907.398563,
+      "last_timestamp": 1780039907.420842,
+      "packet_count": 2,
+      "byte_count": 20,
+      "direction": "UNKNOWN",
+      "port_pair": "3074/3075",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_05",
+      "first_timestamp": 1780039969.823485,
+      "last_timestamp": 1780039969.899691,
+      "packet_count": 2,
+      "byte_count": 219,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52271",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_06",
+      "first_timestamp": 1780039968.89335,
+      "last_timestamp": 1780039969.041073,
+      "packet_count": 2,
+      "byte_count": 301,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52272",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_07",
+      "first_timestamp": 1780039920.612375,
+      "last_timestamp": 1780039920.63359,
+      "packet_count": 2,
+      "byte_count": 173,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52273",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_08",
+      "first_timestamp": 1780039920.178538,
+      "last_timestamp": 1780039920.18515,
+      "packet_count": 2,
+      "byte_count": 114,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52274",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_09",
+      "first_timestamp": 1780039919.721316,
+      "last_timestamp": 1780039919.874761,
+      "packet_count": 2,
+      "byte_count": 235,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52275",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_10",
+      "first_timestamp": 1780039904.451997,
+      "last_timestamp": 1780039904.48672,
+      "packet_count": 2,
+      "byte_count": 116,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52276",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_11",
+      "first_timestamp": 1780039904.429016,
+      "last_timestamp": 1780039904.451267,
+      "packet_count": 2,
+      "byte_count": 116,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52277",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_12",
+      "first_timestamp": 1780039904.403532,
+      "last_timestamp": 1780039904.428182,
+      "packet_count": 2,
+      "byte_count": 116,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52278",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_13",
+      "first_timestamp": 1780039904.353348,
+      "last_timestamp": 1780039904.402749,
+      "packet_count": 2,
+      "byte_count": 116,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52279",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_14",
+      "first_timestamp": 1780039904.298015,
+      "last_timestamp": 1780039904.352596,
+      "packet_count": 2,
+      "byte_count": 116,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52280",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_15",
+      "first_timestamp": 1780039904.269764,
+      "last_timestamp": 1780039904.297267,
+      "packet_count": 2,
+      "byte_count": 116,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52281",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_16",
+      "first_timestamp": 1780039904.234536,
+      "last_timestamp": 1780039904.268986,
+      "packet_count": 2,
+      "byte_count": 116,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52282",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_17",
+      "first_timestamp": 1780039904.181618,
+      "last_timestamp": 1780039904.233493,
+      "packet_count": 2,
+      "byte_count": 116,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52283",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_18",
+      "first_timestamp": 1780039904.15192,
+      "last_timestamp": 1780039904.180652,
+      "packet_count": 2,
+      "byte_count": 104,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52284",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_19",
+      "first_timestamp": 1780039904.123887,
+      "last_timestamp": 1780039904.151186,
+      "packet_count": 2,
+      "byte_count": 104,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52285",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_20",
+      "first_timestamp": 1780039904.101867,
+      "last_timestamp": 1780039904.123073,
+      "packet_count": 2,
+      "byte_count": 104,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52286",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_21",
+      "first_timestamp": 1780039904.036275,
+      "last_timestamp": 1780039904.101092,
+      "packet_count": 2,
+      "byte_count": 104,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52287",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_22",
+      "first_timestamp": 1780039904.012878,
+      "last_timestamp": 1780039904.03542,
+      "packet_count": 2,
+      "byte_count": 104,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52288",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_23",
+      "first_timestamp": 1780039903.921388,
+      "last_timestamp": 1780039904.012002,
+      "packet_count": 2,
+      "byte_count": 104,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52289",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_24",
+      "first_timestamp": 1780039903.901169,
+      "last_timestamp": 1780039903.920695,
+      "packet_count": 2,
+      "byte_count": 104,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52290",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_25",
+      "first_timestamp": 1780039903.861932,
+      "last_timestamp": 1780039903.900331,
+      "packet_count": 2,
+      "byte_count": 104,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52291",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_26",
+      "first_timestamp": 1780039901.793162,
+      "last_timestamp": 1780039901.800585,
+      "packet_count": 2,
+      "byte_count": 155,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52293",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_27",
+      "first_timestamp": 1780039901.726363,
+      "last_timestamp": 1780039901.732632,
+      "packet_count": 2,
+      "byte_count": 149,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52294",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_28",
+      "first_timestamp": 1780039901.593082,
+      "last_timestamp": 1780039901.669886,
+      "packet_count": 2,
+      "byte_count": 149,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52295",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_29",
+      "first_timestamp": 1780039900.77977,
+      "last_timestamp": 1780039900.843791,
+      "packet_count": 2,
+      "byte_count": 155,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52297",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_30",
+      "first_timestamp": 1780039897.142251,
+      "last_timestamp": 1780039897.266768,
+      "packet_count": 2,
+      "byte_count": 200,
+      "direction": "UNKNOWN",
+      "port_pair": "53/52298",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_01",
+      "first_timestamp": 1780985462.701185,
+      "last_timestamp": 1780985462.723265,
+      "packet_count": 2,
+      "byte_count": 173,
+      "direction": "UNKNOWN",
+      "port_pair": "53/49428",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    },
+    {
+      "flow_id": "UDP_FLOW_02",
+      "first_timestamp": 1780985462.400943,
+      "last_timestamp": 1780985462.410738,
+      "packet_count": 2,
+      "byte_count": 102,
+      "direction": "UNKNOWN",
+      "port_pair": "53/49429",
+      "session_relation": "BEFORE_SESSION",
+      "classification": "OBSERVED"
+    }
+  ],
+  "correlations": [
+    {
+      "capture_id": "20260529-003132",
+      "kind": "NAT_TEMPORAL",
+      "bap_msg_id": 302,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 17.531346797943115,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=17.531347; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "NAT_TEMPORAL",
+      "bap_msg_id": 303,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 17.554255962371826,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=17.554256; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 18.866256952285767,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=18.866257; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 18.999313831329346,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=18.999314; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 28.19384789466858,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=28.193848; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 29.585550785064697,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=29.585551; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 29.585731983184814,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=29.585732; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 32.164697885513306,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=32.164698; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 32.799134969711304,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=32.799135; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 62.26108980178833,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=62.261090; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 93.3257668018341,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=93.325767; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 104.70377683639526,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=104.703777; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 131.39769792556763,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=131.397698; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 143.3432719707489,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=143.343272; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 18.913915872573853,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=18.913916; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 19.024913787841797,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=19.024914; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 28.22019600868225,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=28.220196; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 29.61128282546997,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=29.611283; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 29.613263845443726,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=29.613264; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 32.190860986709595,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=32.190861; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 32.8425178527832,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=32.842518; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 62.28671193122864,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=62.286712; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 93.35302090644836,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=93.353021; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 104.7303318977356,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=104.730332; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 131.42518591880798,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=131.425186; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 143.3721809387207,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=143.372181; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 12,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 19.10011887550354,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=19.100119; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 12,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 31.2620530128479,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=31.262053; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 12,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 31.2620530128479,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=31.262053; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 13,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 19.122722864151,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=19.122723; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 13,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 31.28384280204773,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=31.283843; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 13,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 31.284803867340088,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=31.284804; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 24.889518976211548,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=24.889519; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 37.8689649105072,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=37.868965; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 42.90721392631531,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=42.907214; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 47.94577980041504,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=47.945780; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 52.984232902526855,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=52.984233; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 58.02309989929199,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=58.023100; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 67.29895687103271,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=67.298957; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 72.33729386329651,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=72.337294; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 77.37585496902466,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=77.375855; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 82.4146888256073,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=82.414689; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 87.45319080352783,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=87.453191; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 92.49128079414368,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=92.491281; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 98.36387181282043,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=98.363872; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 103.40239787101746,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=103.402398; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 109.74232387542725,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=109.742324; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 114.78060793876648,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=114.780608; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 119.81921601295471,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=119.819216; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 124.85775995254517,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=124.857760; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 129.89647388458252,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=129.896474; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 136.43623995780945,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=136.436240; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 141.47469401359558,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=141.474694; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 148.38157296180725,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=148.381573; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 153.42008900642395,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=153.420089; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 158.45860195159912,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=158.458602; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 163.49742484092712,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=163.497425; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 168.5355429649353,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=168.535543; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 173.57402682304382,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=173.574027; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 178.61285591125488,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=178.612856; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 183.65096592903137,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=183.650966; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 188.68946886062622,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=188.689469; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 193.72802901268005,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=193.728029; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 24.91185998916626,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=24.911860; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 37.89282298088074,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=37.892823; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 42.93069386482239,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=42.930694; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 47.96738791465759,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=47.967388; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 53.00744295120239,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=53.007443; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 58.04495096206665,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=58.044951; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 67.32190680503845,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=67.321907; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 72.36161780357361,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=72.361618; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 77.39907789230347,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=77.399078; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 82.43827891349792,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=82.438279; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 87.47760081291199,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=87.477601; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 92.51325488090515,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=92.513255; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 98.38789796829224,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=98.387898; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 103.42451882362366,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=103.424519; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 109.7650728225708,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=109.765073; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 114.80497598648071,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=114.804976; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 119.84340381622314,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=119.843404; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 124.88005685806274,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=124.880057; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 129.91933393478394,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=129.919334; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 136.45869493484497,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=136.458695; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 141.49901294708252,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=141.499013; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 148.40367794036865,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=148.403678; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 153.44478297233582,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=153.444783; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 158.48250579833984,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=158.482506; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 163.51919794082642,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=163.519198; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 168.55921697616577,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=168.559217; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 173.59650182724,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=173.596502; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 178.63597083091736,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=178.635971; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 183.67304182052612,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=183.673042; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 188.71203684806824,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=188.712037; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": 193.75084781646729,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→52271 delta_s=193.750848; correlation≠causality"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_01 ports 1900/52292"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_02",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_02 ports 1900/52296"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_03",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_03 ports 3074/3074"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_04",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_04 ports 3074/3075"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_05",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_05 ports 53/52271"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_06",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_06 ports 53/52272"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_07",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_07 ports 53/52273"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_08",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_08 ports 53/52274"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_09",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_09 ports 53/52275"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_10",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_10 ports 53/52276"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_11",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_11 ports 53/52277"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_12",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_12 ports 53/52278"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_13",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_13 ports 53/52279"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_14",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_14 ports 53/52280"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_15",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_15 ports 53/52281"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_16",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_16 ports 53/52282"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_17",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_17 ports 53/52283"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_18",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_18 ports 53/52284"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_19",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_19 ports 53/52285"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_20",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_20 ports 53/52286"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_21",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_21 ports 53/52287"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_22",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_22 ports 53/52288"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_23",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_23 ports 53/52289"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_24",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_24 ports 53/52290"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_25",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_25 ports 53/52291"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_26",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_26 ports 53/52293"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_27",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_27 ports 53/52294"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_28",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_28 ports 53/52295"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_29",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_29 ports 53/52297"
+    },
+    {
+      "capture_id": "20260529-003132",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_30",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_30 ports 53/52298"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "NAT_TEMPORAL",
+      "bap_msg_id": 302,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 62.408612966537476,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=62.408613; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "NAT_TEMPORAL",
+      "bap_msg_id": 303,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 62.42762517929077,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=62.427625; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 63.74390506744385,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=63.743905; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 63.877278089523315,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=63.877278; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 73.53696608543396,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=73.536966; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 74.96365809440613,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=74.963658; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 76.75887298583984,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=76.758873; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 77.82615804672241,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=77.826158; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 78.16067314147949,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=78.160673; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 90.42157411575317,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=90.421574; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 114.77998399734497,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=114.779984; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 128.37998795509338,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=128.379988; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 148.26563596725464,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=148.265636; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 150.44986605644226,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=150.449866; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 152.1192650794983,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=152.119265; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 10,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 153.25312995910645,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=153.253130; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 63.78728413581848,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=63.787284; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 63.900805950164795,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=63.900806; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 73.56233406066895,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=73.562334; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 74.98778796195984,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=74.987788; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 76.78035998344421,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=76.780360; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 77.85068106651306,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=77.850681; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 78.20149207115173,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=78.201492; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 90.44449996948242,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=90.444500; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 114.80174612998962,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=114.801746; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 128.4012429714203,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=128.401243; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 148.28662014007568,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=148.286620; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 150.47214698791504,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=150.472147; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 152.15761303901672,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=152.157613; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 11,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 153.27687406539917,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=153.276874; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 12,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 63.978049993515015,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=63.978050; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 12,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 76.79041314125061,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=76.790413; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 12,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 76.79041314125061,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=76.790413; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 13,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 63.99798798561096,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=63.997988; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 13,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 76.80981516838074,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=76.809815; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 13,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 76.81061911582947,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=76.810619; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 69.76650094985962,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=69.766501; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 83.24739718437195,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=83.247397; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 88.28546810150146,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=88.285468; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 99.93094301223755,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=99.930943; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 109.9413001537323,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=109.941300; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 119.81802606582642,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=119.818026; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 124.85770106315613,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=124.857701; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 133.41806507110596,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=133.418065; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 138.4563591480255,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=138.456359; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 143.49420404434204,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=143.494204; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 250,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 158.29046607017517,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=158.290466; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 69.7853410243988,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=69.785341; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 83.26756715774536,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=83.267567; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 88.30788516998291,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=88.307885; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 99.95183205604553,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=99.951832; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 109.96056509017944,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=109.960565; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 119.83740615844727,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=119.837406; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 124.8780210018158,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=124.878021; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 133.43719696998596,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=133.437197; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 138.47508716583252,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=138.475087; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 143.51616215705872,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=143.516162; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "BAP_TEMPORAL",
+      "bap_msg_id": 251,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": 158.31021213531494,
+      "classification": "UNKNOWN",
+      "note": "nearest UDP ports 53→49428 delta_s=158.310212; correlation≠causality"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_01",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_01 ports 53/49428"
+    },
+    {
+      "capture_id": "20260608-231100",
+      "kind": "TCP_SESSION_RELATION",
+      "bap_msg_id": null,
+      "flow_id": "UDP_FLOW_02",
+      "delta_seconds": null,
+      "classification": "BEFORE_SESSION",
+      "note": "flow UDP_FLOW_02 ports 53/49429"
+    }
+  ],
+  "structural_hypotheses": [
+    "POSSIBLE_SEQUENCE_CANDIDATE offset=0 width=4 values=[65537, 65537, 65538, 65538, 65538, 65538, 65538]",
+    "POSSIBLE_SEQUENCE_CANDIDATE offset=2 width=2 values=[1, 1, 2, 2, 2, 2, 2]",
+    "STRUCTURAL_HYPOTHESIS: constant 4-byte prefix 00010004",
+    "STRUCTURAL_HYPOTHESIS: constant 4-byte prefix 4d2d5345",
+    "STRUCTURAL_HYPOTHESIS: variable 4-byte prefixes (2 distinct)"
+  ],
+  "unknowns": [
+    "UNK-UDP-FRAMING",
+    "UNK-UDP-LOSS",
+    "UNK-UDP-NAT",
+    "UNK-UDP-PAYLOAD",
+    "UNK-UDP-REORDERING",
+    "UNK-UDP-SEQUENCING",
+    "UNK-UDP-SESSION-BINDING",
+    "UNK-UDP-TRANSPORT"
+  ],
+  "cross_capture": {
+    "capture_a": "20260529-003132",
+    "capture_b": "20260608-231100",
+    "properties": [
+      {
+        "name": "UDP observed",
+        "present_a": "yes",
+        "present_b": "yes",
+        "stability": "stable",
+        "note": "Presence of any UDP datagrams"
+      },
+      {
+        "name": "UDP port 3074",
+        "present_a": "yes",
+        "present_b": "no",
+        "stability": "capture-specific",
+        "note": "Port number alone is not a Destiny protocol claim"
+      },
+      {
+        "name": "UDP DNS (53)",
+        "present_a": "yes",
+        "present_b": "yes",
+        "stability": "stable",
+        "note": "DNS is ambient; not BAP"
+      },
+      {
+        "name": "UDP during/after BAP session",
+        "present_a": "no",
+        "present_b": "no",
+        "stability": "stable",
+        "note": "Based on timestamps vs 0x1E startup window only"
+      }
+    ]
+  },
+  "udp_observed_any": true
+}

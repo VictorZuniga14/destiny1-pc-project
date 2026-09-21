@@ -50,11 +50,12 @@ Antes de reutilizar código de terceros, revisar su licencia correspondiente.
 - [ ] Definir límites legales y de distribución.
 
 ### Fase 1 — Network
-- [ ] Identificar handshake.
-- [ ] Identificar login/session.
-- [ ] Identificar mensajes de actividad.
-- [ ] Documentar NAT y conexiones.
-- [ ] Crear parser/prototipo de mensajes.
+- [x] Identificar handshake (docs + evidencia PS3).
+- [x] Identificar login/session (M2.1–M2.3 offline).
+- [x] Framing BAP + canal AES-GCM offline (M2.4–M2.8).
+- [ ] Transporte TCP real / servicios comunitarios.
+- [ ] Documentar NAT y conexiones (parcial; UDP UNKNOWN).
+- [x] Crear parser/prototipo de mensajes (crate `network/`).
 
 ### Fase 2 — Client
 - [ ] Conseguir ejecución del cliente en PC.

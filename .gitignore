@@ -28,11 +28,23 @@ logs/
 .env.*
 !.env.example
 
+# External clones (keep out of this repo; contain third-party code / captures)
+external/d1-re/
+external/tiger-pkg/
+external/quicktag/
+
 # Captures / potentially sensitive research data
 captures/private/
+*.pcap
 *.pcapng
 *.key
 *.secret
+**/decrypted_bap.jsonl
+!network/fixtures/**
+evidence/local/
+**/capture_secrets_summary.json
+**/https_flows.jsonl
+
 
 # Temporary files
 tmp/

@@ -1,0 +1,14 @@
+# Synthetic fixture matching kallsyms/d1-re decrypted_bap.jsonl field names.
+# All values are invented. Not a real capture. No secrets.
+# See docs/networking/evidence-jsonl.md
+
+{"kind":"bap_connection","client":"127.0.0.1:40000","server":"127.0.0.1:3074","token_source":"synthetic-fixture","key_sha256_8":"aaaaaaaaaaaaaaaa","nonce":"000000000000000000000000"}
+{"kind":"bap_frame","direction":"client_to_server","frame_index":0,"frame_kind":2,"frame_ts":1.000,"frame_order":10,"frame_offset":0,"id":30,"id_hex":"0x1e","name":"destiny-service-handshake-request","context":1,"payload_len":0,"payload_hex":""}
+{"kind":"bap_frame","direction":"server_to_client","frame_index":0,"frame_kind":2,"frame_ts":1.031,"frame_order":11,"frame_offset":0,"id":31,"id_hex":"0x1f","name":"destiny-service-handshake-response","context":1,"payload_len":0,"payload_hex":""}
+{"kind":"bap_frame","direction":"client_to_server","frame_index":1,"frame_kind":2,"frame_ts":1.052,"frame_order":12,"frame_offset":6,"id":25,"id_hex":"0x19","name":"session-login-request","context":2,"payload_len":2,"payload_hex":"aaaa"}
+{"kind":"bap_frame","direction":"server_to_client","frame_index":1,"frame_kind":2,"frame_ts":1.087,"frame_order":13,"frame_offset":6,"id":26,"id_hex":"0x1a","name":"session-login-response","context":2,"payload_len":2,"payload_hex":"bbbb"}
+{"kind":"bap_frame","direction":"client_to_server","frame_index":2,"frame_kind":1,"frame_ts":1.103,"frame_order":14,"frame_offset":20,"nonce":"010101010101010101010101","id":121,"id_hex":"0x79","name":"encrypted-handshake-request","context":3,"payload_len":1,"payload_hex":"cc","plaintext_hex":"007900000003cc"}
+{"kind":"bap_frame","direction":"server_to_client","frame_index":2,"frame_kind":1,"frame_ts":1.120,"frame_order":15,"frame_offset":20,"nonce":"010101010101010101010100","id":122,"id_hex":"0x7a","name":"encrypted-handshake-status","context":3,"payload_len":1,"payload_hex":"dd","plaintext_hex":"007a00000003dd"}
+{"kind":"bap_frame","direction":"client_to_server","frame_index":3,"frame_kind":1,"frame_ts":1.200,"frame_order":16,"frame_offset":40,"nonce":"020202020202020202020202","id":250,"id_hex":"0xfa","name":"keepalive-request","context":0,"payload_len":0,"payload_hex":"","plaintext_hex":"00fa00000000"}
+{"kind":"bap_frame","direction":"server_to_client","frame_index":3,"frame_kind":1,"frame_ts":1.210,"frame_order":17,"frame_offset":40,"nonce":"020202020202020202020200","id":251,"id_hex":"0xfb","name":"keepalive-status","context":0,"payload_len":0,"payload_hex":"","plaintext_hex":"00fb00000000"}
+{"kind":"bap_frame","direction":"client_to_server","frame_index":4,"frame_kind":1,"frame_ts":1.300,"frame_order":18,"frame_offset":50,"nonce":"030303030303030303030303","error":"decrypt_failed: synthetic"}

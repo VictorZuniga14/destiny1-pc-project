@@ -1,0 +1,26 @@
+{
+  "capture": "EXAMPLE-CAPTURE-ID",
+  "session_key_hex": "<16-byte-session-key-hex>",
+  "session_nonce_hex": "<12-byte-session-nonce-hex>",
+  "frames": [
+    {
+      "direction": "client_to_server",
+      "id_hex": "0x1e",
+      "frame_offset": 0,
+      "frame_order": 0,
+      "expected_kind": 2,
+      "expected_msg_id": 30,
+      "frame_hex": "<full-bap-frame-hex-or-omit-if-unknown>"
+    },
+    {
+      "direction": "client_to_server",
+      "id_hex": "0x79",
+      "frame_offset": 405,
+      "frame_order": 4,
+      "expected_kind": 1,
+      "expected_msg_id": 121,
+      "expected_plaintext_len": 6,
+      "frame_hex": "<full-bap-frame-hex-kind1-tag-plus-ciphertext>"
+    }
+  ]
+}

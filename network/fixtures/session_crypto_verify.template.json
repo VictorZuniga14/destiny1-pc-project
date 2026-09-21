@@ -1,0 +1,9 @@
+{
+  "hmac_message_kind": "LengthIvCiphertext",
+  "record_len": 80,
+  "iv_hex": "",
+  "ciphertext_hex": "",
+  "hmac_hex": "",
+  "aes_key_hex": "",
+  "hmac_key_hex": ""
+}

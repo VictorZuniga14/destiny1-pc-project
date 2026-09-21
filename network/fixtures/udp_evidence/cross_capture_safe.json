@@ -1,0 +1,34 @@
+{
+  "capture_a": "20260529-003132",
+  "capture_b": "20260608-231100",
+  "properties": [
+    {
+      "name": "UDP observed",
+      "present_a": "yes",
+      "present_b": "yes",
+      "stability": "stable",
+      "note": "Presence of any UDP datagrams"
+    },
+    {
+      "name": "UDP port 3074",
+      "present_a": "yes",
+      "present_b": "no",
+      "stability": "capture-specific",
+      "note": "Port number alone is not a Destiny protocol claim"
+    },
+    {
+      "name": "UDP DNS (53)",
+      "present_a": "yes",
+      "present_b": "yes",
+      "stability": "stable",
+      "note": "DNS is ambient; not BAP"
+    },
+    {
+      "name": "UDP during/after BAP session",
+      "present_a": "no",
+      "present_b": "no",
+      "stability": "stable",
+      "note": "Based on timestamps vs 0x1E startup window only"
+    }
+  ]
+}

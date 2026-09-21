@@ -1,0 +1,54 @@
+{
+  "name": "stateful_server_synthetic_trace",
+  "notes": [
+    "Safe metadata only — no keys, tokens, or raw secret payloads.",
+    "Local ProtocolState policy sequence (NOT Bungie server SM).",
+    "Synthetic ASCII payload labels are omitted; IDs and states only."
+  ],
+  "steps": [
+    {
+      "event": "CONNECTED",
+      "expected_state": "WAITING_FOR_SERVICE_HANDSHAKE"
+    },
+    {
+      "event": "C2S",
+      "message_id": "0x1E",
+      "direction": "C2S",
+      "expected_state": "SERVICE_HANDSHAKE_COMPLETE",
+      "response_id": "0x1F"
+    },
+    {
+      "event": "C2S",
+      "message_id": "0x19",
+      "direction": "C2S",
+      "expected_state": "SESSION_ESTABLISHED",
+      "response_id": "0x1A"
+    },
+    {
+      "event": "C2S",
+      "message_id": "0x79",
+      "direction": "C2S",
+      "expected_state": "ENCRYPTED_CHANNEL_ESTABLISHED",
+      "response_id": "0x7A"
+    },
+    {
+      "event": "C2S",
+      "message_id": "0x12E",
+      "direction": "C2S",
+      "expected_state": "ACTIVE"
+    },
+    {
+      "event": "C2S",
+      "message_id": "0xFA",
+      "direction": "C2S",
+      "expected_state": "ACTIVE",
+      "response_id": "0xFB"
+    },
+    {
+      "event": "OBSERVED",
+      "message_id": "0xFB",
+      "direction": "S2C",
+      "expected_state": "ACTIVE"
+    }
+  ]
+}

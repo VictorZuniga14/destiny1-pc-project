@@ -1,0 +1,26 @@
+[package]
+name = "destiny1-network"
+version = "0.1.0"
+edition = "2021"
+description = "Offline BAP/TCP framing analyzer for Destiny 1 network research"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[dependencies]
+aes = "0.8"
+cbc = { version = "0.1", features = ["alloc"] }
+aes-gcm = "0.10"
+hmac = "0.12"
+sha2 = "0.10"
+subtle = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+
+[lib]
+name = "destiny1_network"
+path = "src/lib.rs"
+
+[[bin]]
+name = "destiny1-network"
+path = "src/main.rs"

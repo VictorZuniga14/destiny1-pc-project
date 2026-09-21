@@ -1,0 +1,40 @@
+{
+  "capture_id": "synthetic-unknown",
+  "transport": "HTTPS",
+  "request_observed": true,
+  "response_observed": true,
+  "status_code": null,
+  "field_names": ["platform", "mystery_field"],
+  "field_lengths": {
+    "platform": 7
+  },
+  "field_classifications": {
+    "platform": "IDENTIFIER",
+    "mystery_field": "UNKNOWN"
+  },
+  "fields": [
+    {
+      "name": "platform",
+      "type": "query_string",
+      "length": 7,
+      "classification": "IDENTIFIER",
+      "required": true,
+      "evidence_status": "CONFIRMED",
+      "present": true
+    },
+    {
+      "name": "mystery_field",
+      "type": "unknown",
+      "length": null,
+      "classification": "UNKNOWN",
+      "required": false,
+      "evidence_status": "UNKNOWN",
+      "present": true
+    }
+  ],
+  "evidence_source": "synthetic unknown-fields fixture",
+  "classification": "OBSERVED",
+  "notes": [
+    "Unknown remains unknown — no invented semantics."
+  ]
+}

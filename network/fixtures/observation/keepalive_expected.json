@@ -1,0 +1,29 @@
+{
+  "trace_version": "1",
+  "capture_id": "synthetic-keepalive-expected",
+  "notes": [
+    "0xFA/0xFB observational intervals not universal"
+  ],
+  "frames": [
+    {
+      "connection_id": 1,
+      "frame_index": 0,
+      "direction": "C2S",
+      "kind": 2,
+      "message_id": "0x00FA",
+      "body_len": 12,
+      "state": null,
+      "event": "FrameObserved"
+    },
+    {
+      "connection_id": 1,
+      "frame_index": 1,
+      "direction": "S2C",
+      "kind": 2,
+      "message_id": "0x00FB",
+      "body_len": 12,
+      "state": null,
+      "event": "FrameObserved"
+    }
+  ]
+}

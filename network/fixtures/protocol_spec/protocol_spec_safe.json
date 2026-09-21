@@ -1,0 +1,1359 @@
+{
+  "version": "0.1",
+  "evidence_policy": "v0.1 engineering spec from observed evidence; not an official Bungie specification. CONFIRMED/OBSERVED only for validated facts; STRUCTURAL_HYPOTHESIS and EXTERNAL_REFERENCE kept separate; UNKNOWN remains UNKNOWN.",
+  "captures": [
+    "20260529-003132",
+    "20260608-231100"
+  ],
+  "framing": {
+    "magic": "0x01",
+    "kind_encrypted": 1,
+    "kind_clear": 2,
+    "body_len_endian": "big-endian u32",
+    "clear_layout": "[msg_id:u16 BE][context:u32 BE][payload...]",
+    "encrypted_note": "kind=1 body opaque on wire; offline decrypt via SessionCryptoContext+AES-GCM after session material available",
+    "max_body_len_impl": 4194304,
+    "max_body_len_class": "IMPLEMENTATION_LIMIT",
+    "classification": "Confirmed"
+  },
+  "crypto": {
+    "session_login_0x1a": {
+      "direction": "S2C",
+      "kind": 2,
+      "context": 1,
+      "payload_len": 86,
+      "prefix_u16_be": 200,
+      "record_len_u32_be": 80,
+      "iv_len": 16,
+      "ciphertext_len": 32,
+      "hmac_len": 32,
+      "cipher": "AES-CBC PKCS#7",
+      "hmac": "HMAC-SHA256",
+      "hmac_input": "u32_be(record_len)||IV||ciphertext",
+      "validated": "HMAC valid; AES-CBC decrypt ok; padding ok; plaintext 32; unpadded 28",
+      "nonce_key_layout": "nonce[12]||session_key[16] candidate split",
+      "nonce_key_layout_class": "StructuralHypothesis",
+      "classification": "Confirmed"
+    },
+    "session_crypto_context": {
+      "session_key_len": 16,
+      "session_nonce_len": 12,
+      "c2s_base": "session_nonce with last byte XOR 1",
+      "s2c_base": "session_nonce identity",
+      "counters": "independent C2S and S2C counters; first=base then increment",
+      "classification": "CONFIRMED_FOR_VERIFIED_CAPTURES"
+    },
+    "aes_gcm": {
+      "algorithm": "AES-128-GCM",
+      "key": "session key",
+      "nonce_len": 12,
+      "aad_in_verified_captures": "empty",
+      "aad_general": "AAD was empty in all currently verified frames. General AAD behavior remains UNKNOWN.",
+      "first_frames": "0x79 body_len=22 (tag16+ct6); 0x7A body_len=24 (tag16+ct8)",
+      "channel_validation": "8-frame startup GCM ok; full sessions 124/124 and 122/122 VERIFIED",
+      "classification": "Confirmed"
+    },
+    "nonce_model": {
+      "model": "per-direction base + independent counters",
+      "classification": "CONFIRMED_FOR_VERIFIED_CAPTURES",
+      "not_universal": "Not elevated to UNIVERSAL_PROTOCOL_RULE (platforms/rekey UNKNOWN)"
+    }
+  },
+  "startup_sequence": [
+    "0x1E",
+    "0x1F",
+    "0x19",
+    "0x1A",
+    "0x79",
+    "0x7A",
+    "0x12E",
+    "0x12F"
+  ],
+  "state_machine": {
+    "nodes": [
+      "BRANCH_CAPTURE_A_01",
+      "BRANCH_CAPTURE_B_01",
+      "POST_STARTUP",
+      "REPEATING_CLUSTER_01",
+      "START",
+      "STARTUP_SEQUENCE"
+    ],
+    "startup_label": "STABLE_STARTUP_SEQUENCE",
+    "divergence_index": 25,
+    "repeating_cluster": "REPEATING_CLUSTER_01",
+    "classification": "Observed"
+  },
+  "messages": [
+    {
+      "message_id": "0x0A",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        4,
+        5,
+        10,
+        11,
+        12,
+        14,
+        17,
+        19,
+        26,
+        27,
+        33,
+        36,
+        37,
+        42,
+        45,
+        47,
+        49
+      ],
+      "payload_lengths": [
+        3,
+        11,
+        47,
+        2403
+      ],
+      "fixed_length": false,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_A_01 → BRANCH_CAPTURE_A_01",
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01",
+        "POST_STARTUP → BRANCH_CAPTURE_A_01",
+        "POST_STARTUP → POST_STARTUP",
+        "REPEATING_CLUSTER_01 → BRANCH_CAPTURE_A_01",
+        "REPEATING_CLUSTER_01 → BRANCH_CAPTURE_B_01",
+        "REPEATING_CLUSTER_01 → POST_STARTUP",
+        "STARTUP_SEQUENCE → POST_STARTUP"
+      ],
+      "external_reference": "generated-completion-request",
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "startup sequence member; payload fields largely UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics",
+        "variable length structure"
+      ]
+    },
+    {
+      "message_id": "0x0B",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        4,
+        5,
+        10,
+        11,
+        12,
+        14,
+        17,
+        19,
+        26,
+        27,
+        33,
+        36,
+        37,
+        42,
+        45,
+        47,
+        49
+      ],
+      "payload_lengths": [
+        9,
+        36,
+        56,
+        4177
+      ],
+      "fixed_length": false,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_A_01 → BRANCH_CAPTURE_A_01",
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01",
+        "POST_STARTUP → POST_STARTUP"
+      ],
+      "external_reference": "generated-completion-response",
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics",
+        "variable length structure"
+      ]
+    },
+    {
+      "message_id": "0x0C",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        6,
+        15,
+        16
+      ],
+      "payload_lengths": [
+        9
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_A_01 → BRANCH_CAPTURE_A_01",
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01",
+        "POST_STARTUP → POST_STARTUP"
+      ],
+      "external_reference": "status-like-request",
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x0D",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        6,
+        15,
+        16
+      ],
+      "payload_lengths": [
+        2
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_A_01 → BRANCH_CAPTURE_A_01",
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01",
+        "POST_STARTUP → POST_STARTUP"
+      ],
+      "external_reference": "status-like-response",
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x10",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        31
+      ],
+      "payload_lengths": [
+        8
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "B_only",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x11",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        31
+      ],
+      "payload_lengths": [
+        18
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "B_only",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x12",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        20,
+        23,
+        48
+      ],
+      "payload_lengths": [
+        8
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_A_01 → BRANCH_CAPTURE_A_01",
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01",
+        "REPEATING_CLUSTER_01 → BRANCH_CAPTURE_B_01"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x13",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        20,
+        23,
+        48
+      ],
+      "payload_lengths": [
+        13
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_A_01 → BRANCH_CAPTURE_A_01",
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x15",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        8
+      ],
+      "payload_lengths": [
+        842
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "POST_STARTUP → POST_STARTUP"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x16",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        8
+      ],
+      "payload_lengths": [
+        2
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "POST_STARTUP → POST_STARTUP"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x17",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        13,
+        14
+      ],
+      "payload_lengths": [
+        40
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_A_01 → BRANCH_CAPTURE_A_01",
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x18",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        13,
+        14
+      ],
+      "payload_lengths": [
+        50
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_A_01 → BRANCH_CAPTURE_A_01",
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x19",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        1
+      ],
+      "payload_lengths": [
+        253
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "STARTUP_SEQUENCE → STARTUP_SEQUENCE"
+      ],
+      "external_reference": "session-login-request",
+      "implementation_status": "OfflineImplemented",
+      "confidence": "Observed",
+      "payload_understanding": "startup sequence member; payload fields largely UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x1A",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        1
+      ],
+      "payload_lengths": [
+        86
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [
+        "u16 BE prefix=200 (OBSERVED)",
+        "u32 BE record_len=80 (OBSERVED)",
+        "IV[16] || ciphertext[32] || HMAC[32] (OBSERVED)"
+      ],
+      "unknown_regions": [
+        "unparsed residual / semantic meaning"
+      ],
+      "state_machine_positions": [
+        "STARTUP_SEQUENCE → STARTUP_SEQUENCE"
+      ],
+      "external_reference": "session-login-response",
+      "implementation_status": "OfflineImplemented",
+      "confidence": "Observed",
+      "payload_understanding": "structure + CBC/HMAC offline validated; nonce/key split STRUCTURAL_HYPOTHESIS",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x1E",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        0
+      ],
+      "payload_lengths": [
+        128
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [
+        "clear body layout via framing (OBSERVED)"
+      ],
+      "unknown_regions": [
+        "unparsed residual / semantic meaning"
+      ],
+      "state_machine_positions": [
+        "START → STARTUP_SEQUENCE"
+      ],
+      "external_reference": "destiny-service-handshake-request",
+      "implementation_status": "OfflineImplemented",
+      "confidence": "Observed",
+      "payload_understanding": "startup sequence member; payload fields largely UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x1F",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        0
+      ],
+      "payload_lengths": [
+        130
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [
+        "clear body layout via framing (OBSERVED)"
+      ],
+      "unknown_regions": [
+        "unparsed residual / semantic meaning"
+      ],
+      "state_machine_positions": [
+        "STARTUP_SEQUENCE → STARTUP_SEQUENCE"
+      ],
+      "external_reference": "destiny-service-handshake-response",
+      "implementation_status": "OfflineImplemented",
+      "confidence": "Observed",
+      "payload_understanding": "startup sequence member; payload fields largely UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x20",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        7,
+        18,
+        46
+      ],
+      "payload_lengths": [
+        0
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_A_01 → BRANCH_CAPTURE_A_01",
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01",
+        "POST_STARTUP → POST_STARTUP"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x21",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        7,
+        18,
+        46
+      ],
+      "payload_lengths": [
+        4
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_A_01 → BRANCH_CAPTURE_A_01",
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01",
+        "POST_STARTUP → POST_STARTUP"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x2A",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        24,
+        25,
+        26,
+        28,
+        30,
+        36,
+        41,
+        44
+      ],
+      "payload_lengths": [
+        28,
+        30,
+        112,
+        113,
+        119,
+        204
+      ],
+      "fixed_length": false,
+      "cross_capture_present": "B_only",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01",
+        "REPEATING_CLUSTER_01 → BRANCH_CAPTURE_B_01"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics",
+        "variable length structure"
+      ]
+    },
+    {
+      "message_id": "0x2B",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        24,
+        25,
+        26,
+        28,
+        30,
+        36,
+        41,
+        44
+      ],
+      "payload_lengths": [
+        17,
+        20,
+        21,
+        22,
+        188
+      ],
+      "fixed_length": false,
+      "cross_capture_present": "B_only",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics",
+        "variable length structure"
+      ]
+    },
+    {
+      "message_id": "0x79",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        2
+      ],
+      "payload_lengths": [
+        0
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "STARTUP_SEQUENCE → STARTUP_SEQUENCE"
+      ],
+      "external_reference": "encrypted-handshake-request",
+      "implementation_status": "OfflineImplemented",
+      "confidence": "Observed",
+      "payload_understanding": "encrypted/clear observed; GCM path offline for encrypted after session",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x7A",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        2
+      ],
+      "payload_lengths": [
+        2
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "STARTUP_SEQUENCE → STARTUP_SEQUENCE"
+      ],
+      "external_reference": "encrypted-handshake-status",
+      "implementation_status": "OfflineImplemented",
+      "confidence": "Observed",
+      "payload_understanding": "encrypted/clear observed; GCM path offline for encrypted after session",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x7B",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "payload_lengths": [
+        44,
+        45,
+        46,
+        48,
+        49,
+        54,
+        61,
+        68,
+        71,
+        89,
+        91,
+        100,
+        105,
+        128,
+        160,
+        177,
+        184,
+        187,
+        188,
+        429,
+        2092,
+        17285,
+        23905,
+        23929
+      ],
+      "fixed_length": false,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_A_01 → BRANCH_CAPTURE_A_01",
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01",
+        "POST_STARTUP → POST_STARTUP"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics",
+        "variable length structure"
+      ]
+    },
+    {
+      "message_id": "0xAB",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        12,
+        13,
+        43,
+        51
+      ],
+      "payload_lengths": [
+        533,
+        653,
+        658,
+        2423
+      ],
+      "fixed_length": false,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_A_01 → BRANCH_CAPTURE_A_01",
+        "BRANCH_CAPTURE_B_01 → BRANCH_CAPTURE_B_01",
+        "POST_STARTUP → BRANCH_CAPTURE_B_01",
+        "REPEATING_CLUSTER_01 → BRANCH_CAPTURE_B_01"
+      ],
+      "external_reference": null,
+      "implementation_status": "PartiallyUnderstood",
+      "confidence": "Observed",
+      "payload_understanding": "lengths/directions OBSERVED; payload semantics UNKNOWN",
+      "unknowns": [
+        "exact payload field semantics",
+        "variable length structure"
+      ]
+    },
+    {
+      "message_id": "0xFA",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        9,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        37,
+        38,
+        39,
+        40,
+        41,
+        43,
+        44,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "payload_lengths": [
+        0
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "BRANCH_CAPTURE_A_01 → REPEATING_CLUSTER_01",
+        "BRANCH_CAPTURE_B_01 → REPEATING_CLUSTER_01",
+        "POST_STARTUP → REPEATING_CLUSTER_01",
+        "REPEATING_CLUSTER_01 → REPEATING_CLUSTER_01"
+      ],
+      "external_reference": "keepalive-request",
+      "implementation_status": "OfflineImplemented",
+      "confidence": "Observed",
+      "payload_understanding": "encrypted/clear observed; GCM path offline for encrypted after session",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0xFB",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        9,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        37,
+        38,
+        39,
+        40,
+        41,
+        43,
+        44,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "payload_lengths": [
+        2
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "REPEATING_CLUSTER_01 → REPEATING_CLUSTER_01"
+      ],
+      "external_reference": "keepalive-status",
+      "implementation_status": "OfflineImplemented",
+      "confidence": "Observed",
+      "payload_understanding": "encrypted/clear observed; GCM path offline for encrypted after session",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x12E",
+      "directions": [
+        "client_to_server"
+      ],
+      "contexts": [
+        3
+      ],
+      "payload_lengths": [
+        40
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "STARTUP_SEQUENCE → STARTUP_SEQUENCE"
+      ],
+      "external_reference": "nat-report",
+      "implementation_status": "OfflineImplemented",
+      "confidence": "Observed",
+      "payload_understanding": "encrypted/clear observed; GCM path offline for encrypted after session",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    },
+    {
+      "message_id": "0x12F",
+      "directions": [
+        "server_to_client"
+      ],
+      "contexts": [
+        3
+      ],
+      "payload_lengths": [
+        2
+      ],
+      "fixed_length": true,
+      "cross_capture_present": "both",
+      "known_fields": [],
+      "unknown_regions": [
+        "entire payload"
+      ],
+      "state_machine_positions": [
+        "STARTUP_SEQUENCE → STARTUP_SEQUENCE"
+      ],
+      "external_reference": "nat-report-status",
+      "implementation_status": "OfflineImplemented",
+      "confidence": "Observed",
+      "payload_understanding": "encrypted/clear observed; GCM path offline for encrypted after session",
+      "unknowns": [
+        "exact payload field semantics"
+      ]
+    }
+  ],
+  "implementation_readiness": [
+    {
+      "component": "BAP framing",
+      "evidence_level": "Confirmed",
+      "offline_status": "OfflineImplemented",
+      "readiness": "ReadyOffline",
+      "understood": "HIGH",
+      "implementable_offline": "YES",
+      "server_compatible": "NOT YET VERIFIED",
+      "blocked_by": [],
+      "unknowns": [
+        "kinds beyond 1/2"
+      ]
+    },
+    {
+      "component": "clear messages",
+      "evidence_level": "Observed",
+      "offline_status": "OfflineImplemented",
+      "readiness": "ReadyOffline",
+      "understood": "MEDIUM",
+      "implementable_offline": "YES",
+      "server_compatible": "NOT YET VERIFIED",
+      "blocked_by": [
+        "payload schemas"
+      ],
+      "unknowns": [
+        "most clear payload fields"
+      ]
+    },
+    {
+      "component": "session-login crypto",
+      "evidence_level": "Confirmed",
+      "offline_status": "OfflineImplemented",
+      "readiness": "ReadyOffline",
+      "understood": "HIGH (capture-validated)",
+      "implementable_offline": "YES",
+      "server_compatible": "NOT YET VERIFIED",
+      "blocked_by": [
+        "SignOn key acquisition in-repo"
+      ],
+      "unknowns": [
+        "nonce/key layout semantic confirmation"
+      ]
+    },
+    {
+      "component": "GCM channel",
+      "evidence_level": "Confirmed",
+      "offline_status": "OfflineImplemented",
+      "readiness": "ReadyOffline",
+      "understood": "HIGH",
+      "implementable_offline": "YES",
+      "server_compatible": "NOT YET VERIFIED",
+      "blocked_by": [],
+      "unknowns": [
+        "AAD beyond verified empty"
+      ]
+    },
+    {
+      "component": "nonce handling",
+      "evidence_level": "Confirmed",
+      "offline_status": "OfflineImplemented",
+      "readiness": "ReadyOffline",
+      "understood": "HIGH for verified captures",
+      "implementable_offline": "YES",
+      "server_compatible": "NOT YET VERIFIED",
+      "blocked_by": [],
+      "unknowns": [
+        "rekey / other platforms"
+      ]
+    },
+    {
+      "component": "stream decoder",
+      "evidence_level": "Confirmed",
+      "offline_status": "OfflineImplemented",
+      "readiness": "ReadyOffline",
+      "understood": "HIGH",
+      "implementable_offline": "YES",
+      "server_compatible": "N/A (local)",
+      "blocked_by": [],
+      "unknowns": [
+        "MAX_BODY_LEN is IMPLEMENTATION_LIMIT"
+      ]
+    },
+    {
+      "component": "TCP byte source",
+      "evidence_level": "Observed",
+      "offline_status": "OfflineImplemented",
+      "readiness": "ReadyForLocalTest",
+      "understood": "MEDIUM",
+      "implementable_offline": "YES (local loopback)",
+      "server_compatible": "NOT IMPLEMENTED (no Bungie endpoint)",
+      "blocked_by": [
+        "no write path",
+        "no live endpoints"
+      ],
+      "unknowns": [
+        "production TCP endpoint/port"
+      ]
+    },
+    {
+      "component": "startup state machine",
+      "evidence_level": "Observed",
+      "offline_status": "OfflineImplemented",
+      "readiness": "ReadyOffline",
+      "understood": "MEDIUM",
+      "implementable_offline": "YES",
+      "server_compatible": "NOT YET VERIFIED",
+      "blocked_by": [],
+      "unknowns": [
+        "semantic names for states"
+      ]
+    },
+    {
+      "component": "message dispatch",
+      "evidence_level": "Observed",
+      "offline_status": "PartiallyUnderstood",
+      "readiness": "PartiallyReady",
+      "understood": "LOW–MEDIUM",
+      "implementable_offline": "PARTIAL",
+      "server_compatible": "NO",
+      "blocked_by": [
+        "payload semantics"
+      ],
+      "unknowns": [
+        "handlers for post-startup IDs"
+      ]
+    },
+    {
+      "component": "SignOn",
+      "evidence_level": "ExternalReference",
+      "offline_status": "Documented",
+      "readiness": "Blocked",
+      "understood": "DOCUMENTED",
+      "implementable_offline": "NO (client not implemented)",
+      "server_compatible": "NOT IMPLEMENTED",
+      "blocked_by": [
+        "production SignOn client"
+      ],
+      "unknowns": [
+        "token formats beyond docs"
+      ]
+    },
+    {
+      "component": "authentication",
+      "evidence_level": "Unknown",
+      "offline_status": "Unknown",
+      "readiness": "Blocked",
+      "understood": "LOW",
+      "implementable_offline": "NO",
+      "server_compatible": "NO",
+      "blocked_by": [
+        "SignOn",
+        "account services"
+      ],
+      "unknowns": [
+        "auth flow semantics"
+      ]
+    },
+    {
+      "component": "UDP",
+      "evidence_level": "Unknown",
+      "offline_status": "Unknown",
+      "readiness": "Blocked",
+      "understood": "LOW",
+      "implementable_offline": "NO",
+      "server_compatible": "NO",
+      "blocked_by": [
+        "no UDP evidence pipeline"
+      ],
+      "unknowns": [
+        "gameplay transport"
+      ]
+    },
+    {
+      "component": "gameplay",
+      "evidence_level": "Unknown",
+      "offline_status": "Unknown",
+      "readiness": "Blocked",
+      "understood": "LOW",
+      "implementable_offline": "NO",
+      "server_compatible": "NO",
+      "blocked_by": [
+        "UDP",
+        "world state"
+      ],
+      "unknowns": [
+        "activity/world messages"
+      ]
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "UNK-UDP",
+      "description": "UDP/gameplay transport mechanics",
+      "priority": "High",
+      "blocks": "gameplay / multiplayer"
+    },
+    {
+      "id": "UNK-PAYLOAD",
+      "description": "Payload field semantics for critical post-session messages",
+      "priority": "High",
+      "blocks": "message dispatch / local server responses"
+    },
+    {
+      "id": "UNK-SERVER-STATE",
+      "description": "Server-side state expectations after startup",
+      "priority": "High",
+      "blocks": "interoperable local server"
+    },
+    {
+      "id": "UNK-CONTEXT",
+      "description": "Meaning of BAP context u32",
+      "priority": "Medium",
+      "blocks": "correct request correlation"
+    },
+    {
+      "id": "UNK-KEEPALIVE-MS",
+      "description": "Keepalive wall-clock period (frame_order only today)",
+      "priority": "Medium",
+      "blocks": "timing-accurate keepalive emulation"
+    },
+    {
+      "id": "UNK-AAD",
+      "description": "AAD behavior beyond empty-in-verified-captures",
+      "priority": "Medium",
+      "blocks": "general GCM claims"
+    },
+    {
+      "id": "UNK-VARIABLE",
+      "description": "Variable-length payload structures (e.g. 0x7B, 0xAB)",
+      "priority": "Medium",
+      "blocks": "full payload parsers"
+    },
+    {
+      "id": "UNK-CAPTURE-SPECIFIC",
+      "description": "Capture-specific IDs (0x10/0x11/0x2A/0x2B) roles",
+      "priority": "Low",
+      "blocks": "complete message coverage"
+    },
+    {
+      "id": "UNK-PLATFORM",
+      "description": "PS4/Xbox/PC protocol equivalence",
+      "priority": "High",
+      "blocks": "cross-platform claims"
+    },
+    {
+      "id": "UNK-REKEY",
+      "description": "AES-GCM rekey / resync rules",
+      "priority": "Medium",
+      "blocks": "long-lived sessions"
+    }
+  ],
+  "external_reference_note": "Names from messages.rs / message-matrix.md / d1-re docs are EXTERNAL_REFERENCE only.",
+  "message_count": 28
+}

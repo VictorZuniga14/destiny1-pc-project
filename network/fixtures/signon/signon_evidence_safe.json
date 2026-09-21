@@ -1,0 +1,104 @@
+{
+  "capture_id": "20260529-003132",
+  "transport": "HTTPS",
+  "request_observed": true,
+  "response_observed": true,
+  "status_code": null,
+  "path_observed": "/SignOn",
+  "platform_query_observed": "ps3_ppu",
+  "field_names": [
+    "platform",
+    "build",
+    "aes_key",
+    "mac_key",
+    "bap_endpoint_ip",
+    "bap_endpoint_port",
+    "response_wire_schema"
+  ],
+  "field_lengths": {
+    "aes_key": 16,
+    "mac_key": 16,
+    "platform": 7
+  },
+  "field_classifications": {
+    "aes_key": "SECRET_MATERIAL",
+    "mac_key": "SECRET_MATERIAL",
+    "platform": "IDENTIFIER",
+    "build": "IDENTIFIER",
+    "bap_endpoint_ip": "PUBLIC",
+    "bap_endpoint_port": "PUBLIC",
+    "response_wire_schema": "UNKNOWN"
+  },
+  "fields": [
+    {
+      "name": "platform",
+      "type": "query_string",
+      "length": 7,
+      "classification": "IDENTIFIER",
+      "required": true,
+      "evidence_status": "CONFIRMED",
+      "present": true
+    },
+    {
+      "name": "build",
+      "type": "query_string",
+      "length": null,
+      "classification": "IDENTIFIER",
+      "required": true,
+      "evidence_status": "OBSERVED",
+      "present": true
+    },
+    {
+      "name": "aes_key",
+      "type": "bytes",
+      "length": 16,
+      "classification": "SECRET_MATERIAL",
+      "required": true,
+      "evidence_status": "CONFIRMED",
+      "present": true
+    },
+    {
+      "name": "mac_key",
+      "type": "bytes",
+      "length": 16,
+      "classification": "SECRET_MATERIAL",
+      "required": true,
+      "evidence_status": "CONFIRMED",
+      "present": true
+    },
+    {
+      "name": "bap_endpoint_ip",
+      "type": "varint_packed_ipv4",
+      "length": null,
+      "classification": "PUBLIC",
+      "required": false,
+      "evidence_status": "CONFIRMED",
+      "present": true
+    },
+    {
+      "name": "bap_endpoint_port",
+      "type": "varint",
+      "length": null,
+      "classification": "PUBLIC",
+      "required": false,
+      "evidence_status": "CONFIRMED",
+      "present": true
+    },
+    {
+      "name": "response_wire_schema",
+      "type": "unknown",
+      "length": null,
+      "classification": "UNKNOWN",
+      "required": false,
+      "evidence_status": "UNKNOWN",
+      "present": false
+    }
+  ],
+  "evidence_source": "docs/networking/signon-https.md + d1-re workflow (offline)",
+  "classification": "CONFIRMED",
+  "notes": [
+    "SignOn analysis is offline.",
+    "Real SignOn is not implemented.",
+    "No credentials or session secrets stored."
+  ]
+}

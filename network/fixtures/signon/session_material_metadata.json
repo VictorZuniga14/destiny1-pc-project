@@ -1,0 +1,11 @@
+{
+  "session_key_present": true,
+  "session_key_length": 16,
+  "session_nonce_present": true,
+  "session_nonce_length": 12,
+  "mac_key_present": false,
+  "mac_key_length": null,
+  "source": "SYNTHETIC_TEST_ONLY",
+  "classification": "CONFIRMED",
+  "synthetic_test_only": true
+}

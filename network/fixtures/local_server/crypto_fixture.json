@@ -1,0 +1,6 @@
+{
+  "name": "synthetic-local-server",
+  "session_key_hex": "000102030405060708090a0b0c0d0e0f",
+  "session_nonce_hex": "101112131415161718191a1b",
+  "note": "SYNTHETIC_TEST_ONLY — deterministic 00..0f / 10..1b; never from captures; never print decoded key/nonce in logs"
+}

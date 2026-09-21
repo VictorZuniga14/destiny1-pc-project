@@ -1,0 +1,56 @@
+{
+  "name": "external_boundary_safe_trace",
+  "notes": [
+    "Safe metadata only — no payloads, plaintext, ciphertext, keys, nonce, tokens, or credentials.",
+    "M4.7 ExternalClientBoundary local harness — NOT Destiny 1 / Bungie."
+  ],
+  "expected_result": "EXTERNAL_BOUNDARY_VERIFY: VERIFIED",
+  "events": [
+    {
+      "connection_id": 1,
+      "event": "ConnectionAccepted",
+      "protocol_state": "WAITING_FOR_SERVICE_HANDSHAKE",
+      "result": "ok"
+    },
+    {
+      "connection_id": 1,
+      "event": "BytesReceived",
+      "result": "ok"
+    },
+    {
+      "connection_id": 1,
+      "event": "FrameRecovered",
+      "frame_index": 0,
+      "direction": "C2S",
+      "kind": 2,
+      "body_len": 12,
+      "protocol_state": "SERVICE_HANDSHAKE_COMPLETE",
+      "result": "ok"
+    },
+    {
+      "connection_id": 1,
+      "event": "FrameRecovered",
+      "frame_index": 1,
+      "direction": "C2S",
+      "kind": 2,
+      "body_len": 12,
+      "protocol_state": "SESSION_ESTABLISHED",
+      "result": "ok"
+    },
+    {
+      "connection_id": 1,
+      "event": "FrameRecovered",
+      "frame_index": 2,
+      "direction": "C2S",
+      "kind": 1,
+      "body_len": 48,
+      "protocol_state": "ENCRYPTED_CHANNEL_ESTABLISHED",
+      "result": "ok"
+    },
+    {
+      "connection_id": 1,
+      "event": "ConnectionClosed",
+      "result": "eof"
+    }
+  ]
+}

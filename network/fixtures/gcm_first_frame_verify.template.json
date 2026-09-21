@@ -1,0 +1,8 @@
+{
+  "session_key_hex": "",
+  "nonce_hex": "",
+  "tag_hex": "",
+  "ciphertext_hex": "",
+  "aad_hex": "",
+  "expected_plaintext_len": 6
+}

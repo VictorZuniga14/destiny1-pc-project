@@ -1,0 +1,48 @@
+{
+  "name": "simulated-handshake",
+  "protocol": "SIMULATED_HANDSHAKE",
+  "steps": [
+    {
+      "direction": "C2S",
+      "id": "0x1E",
+      "encrypted": false,
+      "context": 1,
+      "payload_hex": "53494d5f3145"
+    },
+    {
+      "direction": "S2C",
+      "id": "0x1F",
+      "encrypted": false,
+      "context": 1,
+      "payload_hex": "53494d5f3146"
+    },
+    {
+      "direction": "C2S",
+      "id": "0x19",
+      "encrypted": false,
+      "context": 1,
+      "payload_hex": "53494d5f3139"
+    },
+    {
+      "direction": "S2C",
+      "id": "0x1A",
+      "encrypted": false,
+      "context": 1,
+      "payload_hex": "53494d5f3141"
+    },
+    {
+      "direction": "C2S",
+      "id": "0x79",
+      "encrypted": true,
+      "context": 1,
+      "payload_hex": "53494d5f3739"
+    },
+    {
+      "direction": "S2C",
+      "id": "0x7A",
+      "encrypted": true,
+      "context": 1,
+      "payload_hex": "53494d5f3741"
+    }
+  ]
+}

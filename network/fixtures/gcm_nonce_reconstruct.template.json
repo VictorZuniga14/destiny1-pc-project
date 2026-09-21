@@ -1,0 +1,6 @@
+{
+  "session_nonce_hex": "",
+  "direction": "client_to_server",
+  "transform": "XorLastByte1",
+  "expected_nonce_hex": ""
+}
